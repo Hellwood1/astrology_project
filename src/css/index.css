@@ -1,0 +1,31 @@
+@import 'modern-normalize';
+
+/* BASE */
+@import './base/common.css';
+@import './base/container.css';
+
+/* VARIABLES */
+@import './utils/variables.css';
+@import './utils/fonts.css';
+
+/* LAYOUT */
+@import './layout/header.css';
+@import './layout/hero.css';
+@import './layout/about-guide.css';
+@import './layout/offerings.css';
+@import './layout/vedic-astrology.css';
+@import './layout/matrix-services.css';
+@import './layout/regression-theraapy.css';
+@import './layout/retreat.css';
+@import './layout/tarot.css';
+@import './layout/reiki.css';
+@import './layout/energy-protection.css';
+@import './layout/hypnotherapy.css';
+@import './layout/gift-meditation.css';
+@import './layout/leela-game.css';
+@import './layout/faq.css';
+@import './layout/footer.css';
+
+/* ANOTHER */
+@import './layout/mobile-menu.css';
+@import './layout/up-btn.css';
