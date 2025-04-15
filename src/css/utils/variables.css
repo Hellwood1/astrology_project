@@ -1,0 +1,9 @@
+:root {
+  --bg-white: #faf8f5;
+  --ghost-white: #f6f7f8;
+  --dusty-blue: #5b768c;
+  --jet-black: #252525;
+  --luxe-gold: #e4c07a;
+
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

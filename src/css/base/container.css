@@ -1,0 +1,30 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* MOBILE */
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
