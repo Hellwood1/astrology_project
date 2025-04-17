@@ -1,0 +1,164 @@
+.section-title {
+  font-family: 'Forum';
+  font-size: 44px;
+  line-height: 1.8;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 78px 0px 88px 0px;
+}
+
+.directions-container {
+  display: flex;
+  align-items: center;
+
+  margin-left: 2px;
+  margin-bottom: 32px;
+}
+
+.tag {
+  color: var(--dusty-blue);
+  font-family: 'Forum';
+  font-size: 38px;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 75px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  transform: rotate(-9deg);
+  flex-shrink: 0;
+
+  border-radius: 12px;
+  border: 1px solid var(--dusty-blue);
+}
+
+.about-guide-list {
+  display: flex;
+  row-gap: 4px;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.about-guide-list-item {
+  display: flex;
+  width: 235px;
+  padding: 16px;
+  justify-content: center;
+  border-radius: 18px;
+  background: var(--dusty-blue);
+}
+
+.list-item-text {
+  color: var(--bg-white);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-guide-message {
+  font-family: 'Forum';
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.first-img-container {
+  margin-right: auto;
+  max-height: 322px;
+  margin-bottom: 24px;
+}
+.second-img-container {
+  margin: auto;
+  max-height: 326px;
+}
+
+.about-guide-first-img {
+  border-radius: 24px;
+  width: 214px;
+  height: 270px;
+  margin-left: auto;
+}
+
+.about-guide-second-img {
+  border-radius: 24px;
+  width: 214px;
+  height: 270px;
+  margin-right: auto;
+}
+
+.caption-container {
+  display: flex;
+  width: 224px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  background: var(--dusty-blue);
+}
+
+.first-photo-caption,
+.second-photo-caption {
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.first-photo-caption {
+  position: relative;
+  top: -60px;
+  left: -39px;
+}
+
+.second-photo-caption {
+  position: relative;
+  top: -56px;
+  left: 96px;
+}
+
+/* TABLET*/
+
+/* @media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 54px;
+    line-height: 1.2;
+  }
+
+  .directions-container {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .tag {
+    font-size: 48px;
+    width: 107px;
+    padding: 0px 10px 24px 10px;
+
+    transform: rotate(-14deg);
+    border-radius: 18px;
+  }
+
+  .about-guide-list {
+    flex-wrap: wrap;
+    gap: 14px;
+    flex-direction: row;
+  }
+
+  .about-guide-list-item {
+    display: flex;
+    width: 235px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .list-item-text {
+  }
+} */
