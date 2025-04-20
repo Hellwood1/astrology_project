@@ -1,10 +1,15 @@
+.about-guide-section {
+  padding: 78px 0px 42px 0px;
+}
+
 .section-title {
   font-family: 'Forum';
   font-size: 44px;
+  font-weight: 400;
   line-height: 1.8;
   text-align: center;
   text-transform: uppercase;
-  margin: 78px 0px 88px 0px;
+  margin-bottom: 88px;
 }
 
 .directions-container {
@@ -21,8 +26,8 @@
   font-size: 38px;
   line-height: normal;
   text-transform: uppercase;
-  width: 75px;
-  padding: 10px 10px 10px 10px;
+  width: 76px;
+  padding: 10px;
   margin-top: 20px;
 
   display: flex;
@@ -43,17 +48,18 @@
 
 .about-guide-list-item {
   display: flex;
-  width: 235px;
+  width: 236px;
   padding: 16px;
   justify-content: center;
   border-radius: 18px;
   background: var(--dusty-blue);
 }
 
-.list-item-text {
+.about-guide-list-item-text {
   color: var(--bg-white);
   font-size: 16px;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .about-guide-message {
@@ -65,6 +71,27 @@
   margin-bottom: 36px;
 }
 
+.about-guide-first-img {
+  margin-left: auto;
+}
+
+.about-guide-first-img,
+.about-guide-second-img {
+  border-radius: 24px;
+  width: 214px;
+  height: 270px;
+}
+
+.caption-container {
+  width: 224px;
+  padding: 8px 10px;
+
+  border-radius: 12px;
+  background: var(--dusty-blue);
+}
+
+/* Поиціонування зображень */
+
 .first-img-container {
   margin-right: auto;
   max-height: 322px;
@@ -75,31 +102,7 @@
   max-height: 326px;
 }
 
-.about-guide-first-img {
-  border-radius: 24px;
-  width: 214px;
-  height: 270px;
-  margin-left: auto;
-}
-
-.about-guide-second-img {
-  border-radius: 24px;
-  width: 214px;
-  height: 270px;
-  margin-right: auto;
-}
-
-.caption-container {
-  display: flex;
-  width: 224px;
-  padding: 8px 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 12px;
-  background: var(--dusty-blue);
-}
+/* Позиціонування підписів до світлин*/
 
 .first-photo-caption,
 .second-photo-caption {
@@ -123,22 +126,27 @@
 
 /* TABLET*/
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .about-guide-section {
+    padding: 100px 0 50px 0;
+  }
+
   .section-title {
     font-size: 54px;
     line-height: 1.2;
+    margin-bottom: 48px;
   }
 
   .directions-container {
     gap: 20px;
     flex-wrap: nowrap;
+    margin-bottom: 44px;
   }
 
   .tag {
     font-size: 48px;
     width: 107px;
-    padding: 0px 10px 24px 10px;
-
+    margin-left: 4px;
     transform: rotate(-14deg);
     border-radius: 18px;
   }
@@ -147,18 +155,122 @@
     flex-wrap: wrap;
     gap: 14px;
     flex-direction: row;
-  }
-
-  .about-guide-list-item {
-    display: flex;
-    width: 235px;
-    padding: 16px;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .list-item-text {
+  .about-guide-list-item-text {
+    line-height: 1.7;
   }
-} */
+
+  .about-guide-message {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+
+  .about-guide-first-img,
+  .about-guide-second-img {
+    width: 446px;
+    height: 556px;
+  }
+
+  .caption-container {
+    width: 433px;
+    padding: 14px 16px;
+  }
+
+  .first-photo-caption,
+  .second-photo-caption {
+    font-size: 18px;
+  }
+  /* Поиціонування зображень */
+
+  .first-img-container {
+    max-height: 592px;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
+  .second-img-container {
+    margin: auto;
+    max-height: 556px;
+  }
+
+  /* Позиціонування підписів до світлин*/
+
+  .first-photo-caption {
+    top: -118px;
+    left: -39px;
+  }
+
+  .second-photo-caption {
+    top: -114px;
+    left: 256px;
+  }
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .about-guide-section {
+    padding: 140px 0 70px 0;
+  }
+
+  .section-title {
+    font-size: 80px;
+    line-height: 1.1;
+  }
+
+  .directions-container {
+    margin-left: 232px;
+  }
+
+  .about-guide-list {
+    justify-content: flex-start;
+    max-width: 800px;
+    margin: 0 auto 0 20px;
+  }
+
+  .about-guide-list-item-text {
+    font-size: 18px;
+  }
+
+  .about-guide-message {
+    max-width: 896px;
+    margin: 0 auto 54px auto;
+  }
+
+  .figure-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .first-img-container,
+  .second-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 433px;
+    margin: 0;
+  }
+
+  .about-guide-first-img,
+  .about-guide-second-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  /* Позиціонування підписів до світлин*/
+  .first-photo-caption {
+    top: -118px;
+    left: -234px;
+  }
+
+  .second-photo-caption {
+    top: -118px;
+    left: 234px;
+  }
+}
