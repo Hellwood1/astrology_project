@@ -1,0 +1,114 @@
+.header {
+  background-color: var(--dusty-blue);
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 34px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-menu-btn {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  fill: var(--ghost-white);
+}
+
+.mobile-menu-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.sound-btn {
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid var(--ghost-white);
+  fill: var(--ghost-white);
+}
+
+.sound-btn:hover,
+.sound-btn:focus {
+  fill: var(--luxe-gold);
+}
+.sound-btn-text {
+  display: none;
+}
+.sound-svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* ================================= TABLET ================================= */
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-left: 92px;
+  }
+  .header {
+    padding-top: 33px;
+    padding-bottom: 64px;
+  }
+  .sound-btn {
+    width: 178px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 11px 18px;
+  }
+  .sound-btn-text {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--ghost-white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+  }
+}
+
+/* ================================= DESKTOP ================================= */
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: 31px;
+  }
+  .header-container {
+    padding-right: 50px;
+    padding-left: 143px;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+    display: flex;
+    gap: 32px;
+    color: var(--ghost-white);
+    font-size: 18px;
+    line-height: 1.56;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .nav-menu > li:hover,
+  .nav-menu > li:focus {
+    color: var(--luxe-gold);
+  }
+
+  .nav {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
