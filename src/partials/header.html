@@ -1,6 +1,10 @@
 <header class="header">
   <div class="container header-container">
-    <button class="mobile-menu-btn" type="button">
+    <button
+      class="mobile-menu-btn"
+      type="button"
+      aria-label="Кнопка для відкриття та закриття мобільного меню"
+    >
       <svg class="mobile-menu-svg" aria-label="menu">
         <use
           href="../img/sprite.svg#mobile-menu-icon"
@@ -40,12 +44,16 @@
         </li>
       </ul>
     </nav>
-    <button class="sound-btn" type="button">
+    <button
+      class="sound-btn"
+      type="button"
+      aria-label="Кнопка для відтворення аудіо файлу."
+    >
       <div class="sound-btn-text">Відтворити</div>
       <svg class="sound-svg" aria-label="menu">
-        <use href="../img/sprite.svg#play-icon" width="30" height="30"></use>
+        <use href="./img/sprite.svg#play-icon" width="30" height="30"></use>
       </svg>
     </button>
-    <audio id="bgMusic" src="../media/аудио для сайта.mp3" loop></audio>
+    <audio id="bgMusic" src="../media/audio.mp3" loop></audio>
   </div>
 </header>
