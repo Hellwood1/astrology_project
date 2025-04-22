@@ -9,27 +9,27 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
   src:
-    local('OpenSans'),
+    local('Open Sans'),
     url(../../fonts/OpenSans-Regular.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Opensans';
+  font-family: 'Open Sans';
   font-weight: 600;
   font-style: normal;
   font-display: swap;
   src:
-    local('OpenSans'),
+    local('Open Sans'),
     url(../../fonts/OpenSans-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Opensans';
+  font-family: 'Open Sans';
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -39,11 +39,11 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   font-weight: 700;
   font-style: normal;
   font-display: swap;
   src:
-    local('OpenSans'),
+    local('Open Sans'),
     url(../../fonts/OpenSans-Bold.woff2) format('woff2');
 }
