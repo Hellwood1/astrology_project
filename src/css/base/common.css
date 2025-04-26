@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
-
+  overflow-x: hidden;
   color: var(--jet-black);
 }
 
