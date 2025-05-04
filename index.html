@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astrology</title>
     <script type="module" crossorigin src="/astrology_project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-Dv6h87KR.css">
+    <link rel="modulepreload" crossorigin href="/astrology_project/assets/vendor-mERG7FVg.js">
+    <link rel="stylesheet" crossorigin href="/astrology_project/assets/vendor-BUrcyj0q.css">
+    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-B4vOY1-7.css">
   </head>
   <body>
     
@@ -62,7 +64,7 @@
     >
       <div class="sound-btn-text">Відтворити</div>
       <svg class="sound-svg" aria-label="menu">
-        <use href="/astrology_project/assets/sprite-0_W73qOy.svg#play-icon" width="30" height="30"></use>
+        <use href="/astrology_project/assets/sprite-Czc_53hu.svg#play-icon" width="30" height="30"></use>
       </svg>
     </button>
     <audio id="bgMusic" src="../media/audio.mp3" loop></audio>
@@ -85,7 +87,7 @@
         <picture>
           <source
             srcset="/astrology_project/assets/hero-desktop-1x-CT6XlMeA.jpg 1x, /astrology_project/assets/hero-desktop-2x-BsF3w_qK.jpg 2x"
-            media="(min-width:1280px)"
+            media="(min-width:1440px)"
           />
           <source
             srcset="/astrology_project/assets/hero-mobile-1x-BUdzktay.jpg 1x, /astrology_project/assets/hero-mobile-2x-BpQMHQXs.jpg 2x"
@@ -96,10 +98,10 @@
             media="(min-width:768px)"
           />
           <img
-            src="./img/about-us/about-us-desktop@1x.jpg"
+            src="/astrology_project/assets/hero-desktop-1x-CT6XlMeA.jpg"
             alt="photo zveda"
-            width="1340"
-            height="470"
+            width="488"
+            height="600"
           />
         </picture>
       </div>
@@ -281,340 +283,470 @@
   </div>
 </section>
 
-      <section></section>
-
-      <section class="matrix-services">
-  <div class="container">
-    <h2 class="matrix-services-section-title">
-      Послуги з розшифровки Матриці Долі
-    </h2>
-    <div class="matrix-services-wrapper">
-      <ul class="matrix-services-list">
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
+      <section class="vedic-section">
+  <div class="container vedic-img">
+    <h1 class="vedic-title">Що таке Ведична астрологія?</h1>
+    <p class="vedic-content">
+      Ведична астрологія (Джйотиш) — це древнє знання з Індії, яке розкриває
+      твою душу, життєвий шлях, сильні сторони, кармічні задачі та призначення.
+      Це не “гороскопи”, а глибокий аналіз унікальної карти народження,
+      складеної згідно з точним розташуванням планет на момент твого появлення
+      на світ.<br />
+      Відповіді, які ти отримаєш:
+    </p>
+    <ul class="vedic-answers">
+      <li>у чому твоє покликання, чого тобі хоче навчити життя</li>
+      <li>підказки, що допоможе рухатися далі без хаосу і втрат</li>
+      <li>усвідомлення повторюваних сценаріїв та їх трансформація</li>
+      <li>чітке розуміння свого характеру, ресурсів і внутрішніх задач</li>
+      <li>розбір складних сфер: стосунки, фінанси, здоров’я, реалізація</li>
+      <li>важливі життєві періоди — коли діяти, а коли чекати</li>
+    </ul>
+    <picture>
+      <source
+        srcset="/astrology_project/assets/galaxy-mobile-yegcWZlH.gif"
+        media="(min-width:1440px)"
+      />
+      <source
+        srcset="/astrology_project/assets/galaxy-mobile-yegcWZlH.gif"
+        media="(max-width:767px)"
+      />
+      <source
+        srcset="/astrology_project/assets/galaxy-mobile-yegcWZlH.gif"
+        media="(min-width:768px)"
+      />
+      <img
+        class="vedic-galaxy"
+        src="/astrology_project/assets/galaxy-mobile-yegcWZlH.gif"
+        alt="galaxy"
+        width="434"
+        height="418"
+      />
+    </picture>
+    <h3 class="vedic-services-title">Послуги з Ведичної астрології</h3>
+    <div class="swipe-arrow-btns">
+      <button
+        type="button"
+        aria-label="Next photo"
+        class="vedic-left-swiper-btn"
+      >
+        <svg class="arrow-icon">
+          <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#arrow-button-icon"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        aria-label="Previos photo"
+        class="vedic-right-swiper-btn"
+      >
+        <svg class="arrow-icon">
+          <use href="/astrology_project/assets/sprite-Czc_53hu.svg#arrow-button-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="vedic-swiper swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
+                <use href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-1"></use>
+              </svg>
+              <h4 class="vedic-card-title">ПОВНИЙ РОЗБІР НАТАЛЬНОЇ КАРТИ</h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> персональна
+                медитація під запит + загальний астропрогноз на рік
+              </p>
+              <p class="vedic-price">3000 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
                 <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >90–120 хв
-          </p>
-          <h3 class="matrix-services-list-title">Повний розбір Матриці</h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Глибокий аналіз твоєї душі: карма роду, задачі на життя, основні
-            енергії, таланти, слабкі місця, цикли долі.
-          </p>
-          <p class="matrix-services-price">3000 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Персональна медитація на головний запит.
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+                  xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"
+                  width="100%"
+                  height="100%"
+                ></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 90–120 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">
+                Натальна карта (повний розбір) — ключ до розуміння себе
+              </h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Стосунки: як будувати гармонійні взаємини та який партнер тобі
+                  підходить.
+                </li>
+                <li>
+                  Фінанси та кар'єра: твої перспективи, блоки та можливості для
+                  зростання.
+                </li>
+                <li>
+                  Здоров’я: слабкі місця організму та способи підтримки
+                  енергетичного балансу.
+                </li>
+                <li>
+                  Кармічні уроки: що тобі хоче показати доля та як це
+                  використати на благо.
+                </li>
+                <li>
+                  Важливі періоди: коли діяти, а коли чекати, щоб уникнути хаосу
+                  і втрат.
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
                 <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >60–70 хв
-          </p>
-          <h3 class="matrix-services-list-title">Прогноз на рік по Матриці</h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Детальний розбір ключових періодів року, викликів, потенціалів та
-            змін.
-          </p>
-          <p class="matrix-services-price">2000 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Персональна медитація на підтримку.
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+                  xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-2"
+                  width="100%"
+                  height="100%"
+                ></use>
+              </svg>
+              <h4 class="vedic-card-title">Експрес-аналіз натальної карти</h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> персональна
+                медитація на гармонізацію твоїх енергій, заспокоєння розуму та
+                активацію внутрішнього ресурсу
+              </p>
+              <p class="vedic-price">1500 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 40–50 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">
+                Експрес-аналіз карти – ключові аспекти твоєї енергетики та долі
+              </h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Характер та сильні сторони: як використовувати їх для
+                  досягнення цілей.
+                </li>
+                <li>
+                  Енергія та життєва місія: що допоможе тобі рухатися вперед.
+                  Важливі цикли життя: моменти
+                </li>
+                <li>
+                  Важливі цикли життя: моменти сили, точки змін і періоди, коли
+                  варто діяти чи спостерігати.
+                </li>
+                <li>
+                  Життєвий шлях: твоє призначення, ключові етапи розвитку та
+                  напрямок, у якому розкривається твій потенціал.
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >90–120 хв
-          </p>
-          <h3 class="matrix-services-list-title">Матриця фінансів</h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Аналіз грошових програм, блоків, фінансового потоку. Розбір етапів
-            розвитку та фінансових ключів.
-          </p>
-          <p class="matrix-services-price">1500 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Рекомендації для підсилення грошового каналу + персональна
-            медитація
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-1"></use>
+              </svg>
+              <h4 class="vedic-card-title">Прогноз на рік (соляр)</h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> персональна
+                медитація на енергії твого року (або на турбуючу тебе тематику)
+                + порада від карт таро
+              </p>
+              <p class="vedic-price">4000 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 90 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">
+                Натальна карта (повний розбір) — ключ до розуміння себе
+              </h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Головні події та можливості року: що чекає на тебе в найближчі
+                  12 місяців.
+                </li>
+                <li>
+                  Коли діяти, а коли чекати: ключові періоди для рішень і змін.
+                </li>
+                <li>
+                  Виклики та уроки: до чого готуватися, щоб уникнути хаосу та
+                  помилок.
+                </li>
+                <li>
+                  Консультація включає розбір натальної карти для точного
+                  налаштування прогнозу, аналіз транзитів, соляра та ключових
+                  періодів року. Таро допоможе побачити тонкі сценарії, які не
+                  завжди видно в зірках, але відчуваються серцем.
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >60 хв
-          </p>
-          <h3 class="matrix-services-list-title">Матриця стосунків</h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Причини повторення сценаріїв у коханні, уроки партнерства, твоя
-            любовна енергія, шлях до гармонійного зв’язку.
-          </p>
-          <p class="matrix-services-price">1500 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Медитація на відкриття серця
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-6"></use>
+              </svg>
+              <h4 class="vedic-card-title">Я і стосунки</h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> персональна
+                медитація на відкриття серця, гармонізацію жіночої енергії та
+                зцілення емоційних ран
+              </p>
+              <p class="vedic-price">1500 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 60 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">
+                Стосунки – ключ до гармонії та глибокого зв’язку
+              </h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Глибинний аналіз теми кохання та партнерства: як ти будуєш
+                  стосунки і які сценарії керують твоїм вибором.
+                </li>
+                <li>
+                  Взаємодія з оточенням: що заважає гармонії в особистих і
+                  соціальних зв’язках.
+                </li>
+                <li>
+                  Внутрішні блоки: які установки стримують тебе від щасливих
+                  стосунків і як їх трансформувати.
+                </li>
+                <li>Аналіз поточних стосунків.</li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >70 хв
-          </p>
-          <h3 class="matrix-services-list-title">Матриця сумісності пари</h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Сумісність по енергіях, кармічні уроки, точки зростання, сильні й
-            уразливі місця у стосунках.
-          </p>
-          <p class="matrix-services-price">2000 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Медитація для гармонізації зв’язку
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-3"></use>
+              </svg>
+              <h4 class="vedic-card-title">
+                Професійна реалізація та фінансова стратегія
+              </h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> персональна
+                медитація на відкриття серця, гармонізацію жіночої енергії та
+                зцілення емоційних ран
+              </p>
+              <p class="vedic-price">1500 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 60 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">
+                Кар’єра і фінанси – твої можливості для зростання
+              </h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Твоя професійна ніша: які сфери діяльності найбільше
+                  відповідають твоїм талантам і енергії.
+                </li>
+                <li>
+                  Сильні сторони: що робить тебе унікальним фахівцем і як це
+                  використати.
+                </li>
+                <li>
+                  Фінансові потоки: джерела доходу, які працюють для тебе
+                  найкраще.
+                </li>
+                <li>
+                  Блоки та обмеження: що заважає реалізації та як це подолати.
+                </li>
+                <li>
+                  Важливі періоди: коли діяти, щоб досягти максимального
+                  результату.
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >60 хв
-          </p>
-          <h3 class="matrix-services-list-title">
-            Матриця кар’єри та реалізації
-          </h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Сфери сили, професії за твоєю енергетикою, кар’єрна стратегія, шлях
-            реалізації.
-          </p>
-          <p class="matrix-services-price">1500 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Практичні поради + медитація на активацію потенціалу
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-2"></use>
+              </svg>
+              <h4 class="vedic-card-title">Дитяча натальна карта</h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> персональна
+                медитація (для батьків або для дитини)
+              </p>
+              <p class="vedic-price">2000 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 60 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">
+                Натальна карта (повний розбір) — ключ до розуміння себе
+              </h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Характер, таланти, сильні та слабкі сторони дитини: що в ній
+                  особливого.
+                </li>
+                <li>
+                  Як правильно підтримати її розвиток не нав’язуючи своїх
+                  очікувань.
+                </li>
+                <li>
+                  Оптимальне виховання відповідно до її енергетики щоб розкрити
+                  її потенціал.
+                </li>
+                <li>
+                  Творчі схильності: визначимо куди направити дитину: у спорт,
+                  на танці чи музичну школу.
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >60 хв
-          </p>
-          <h3 class="matrix-services-list-title">
-            Матриця здоров’я та енергії
-          </h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Стан твоєї енергетики, слабкі місця організму, психосоматика, та
-            відновлення.
-          </p>
-          <p class="matrix-services-price">1500 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Медитація на зцілення тіла
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
-        </li>
-        <li class="matrix-services-list-item">
-          <p class="matrix-services-time">
-            <span class="time-svg-wrapper"
-              ><svg width="24" height="24" aria-label="time icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-time"
-                ></use></svg></span
-            >50–60 хв
-          </p>
-          <h3 class="matrix-services-list-title">Матриця місця сили</h3>
-          <p class="matrix-services-text-wrapper current-text">
-            Аналіз простору, де вам буде максимально комфортно жити й творити.
-            Міста, країни, типи середовища.
-          </p>
-          <p class="matrix-services-price">1500 uah</p>
-          <p class="matrix-services-gift-text current-text">
-            <span class="gift-svg"
-              ><svg width="24" height="24" aria-label="gift icon">
-                <use
-                  href="../img/matrix-sprite.svg#icon-gift"
-                ></use></svg></span
-            >Рекомендації щодо вибору місця для життя + медитація на внутрішню
-            опору
-          </p>
-          <a
-            class="matrix-services-btn"
-            rel="noopener noreferrer"
-            href="https://t.me/zviedarubka"
-            title="Telegram link"
-            target="_blank"
-            >Записатись
-            <span class="telegram-svg-wrapper"
-              ><svg width="29" height="30">
-                <use
-                  href="../img/matrix-sprite.svg#icon-telegram"
-                ></use></svg></span
-          ></a>
+        <li class="swiper-slide">
+          <div class="vedic-cards-li">
+            <div class="white-block">
+              <svg class="cards-stars" role="img" aria-label="Сузір'я">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-group-3"></use>
+              </svg>
+              <h4 class="vedic-card-title">
+                Сумісність з партнером (синастрія)
+              </h4>
+              <p class="vedic-card-info">
+                <span class="dif-color">У подарунок:</span> медитація для
+                гармонізації стосунків
+              </p>
+              <p class="vedic-price">2000 UAH</p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Sound icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-icons-sound"></use>
+              </svg>
+              <p class="vedic-cards-content">
+                Формат: аудіозапис або консультація в Zoom
+              </p>
+            </div>
+            <div class="vedic-little-cards">
+              <svg class="vedic-design-svg" role="img" aria-label="Clock icon">
+                <use xlink:href="/astrology_project/assets/sprite-Czc_53hu.svg#icon-carbon-time"></use>
+              </svg>
+              <p class="vedic-cards-content">Тривалість: 60 - 70 хв.</p>
+            </div>
+            <div class="vedic-last-card-box">
+              <h5 class="vedic-last-card-box-title">Гармонія в стосунках</h5>
+              <ul class="vedic-last-card-box-list">
+                <li>
+                  Розкриття ваших стосунків — як побудувати глибокий емоційний
+                  зв'язок та розуміння.
+                </li>
+                <li>
+                  Кармічні уроки — дізнайтесь, які важливі завдання ви вирішуєте
+                  разом, і як це може змінити ваші стосунки.
+                </li>
+                <li>
+                  Як покращити стосунки — ефективні практики для створення
+                  гармонії, взаєморозуміння та близькості.
+                </li>
+                <li>
+                  Аналіз кризових моментів — які періоди у ваших стосунках
+                  можуть бути найбільш складними та як їх подолати.
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
-      <div class="arrow-btn-wrapper">
-        <button type="button" class="arrow-btn prev">
-          <svg
-            class="arrow-svg"
-            width="40"
-            height="36"
-            aria-label="Left arrow icon"
-          >
-            <use href="../img/matrix-sprite.svg#icon-arrow-button-left"></use>
-          </svg>
-        </button>
-        <button type="button" class="arrow-btn next">
-          <svg
-            class="arrow-svg"
-            width="40"
-            height="36"
-            aria-label="Right arrow icon"
-          >
-            <use href="../img/matrix-sprite.svg#icon-arrow-button-right"></use>
-          </svg>
-        </button>
-      </div>
+    </div>
+
+    <div class="custum-btn-pos">
+      <button
+        class="telegram-btn"
+        type="button"
+        aria-label="Open telegram button"
+      >
+        <div class="telegram-btn-text">Записатись</div>
+        <svg class="telegram-svg" aria-label="telegram">
+          <use
+            href="/astrology_project/assets/sprite-Czc_53hu.svg#telegram-icon"
+            width="30"
+            height="30"
+          ></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
@@ -650,7 +782,7 @@
     <nav class="nav-wrapper">
       <ul class="nav-menu-wrapper">
         <li>
-          <a href="#">Астрологія</a>
+          <a id="start-focus" href="#">Астрологія</a>
         </li>
         <li>
           <a href="#">Матриця долі</a>
