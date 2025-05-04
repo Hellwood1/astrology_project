@@ -141,6 +141,101 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .elips::before {
+    display: none;
+  }
+  .offerings-list {
+    display: flex;
+    column-gap: 40px;
+    margin: 0 0 0 50px;
+    align-self: flex-start;
+  }
+  .offerings-list-first-item {
+    margin-top: 60px;
+    position: relative;
+  }
+  .offerings-list-first-item::after {
+    content: '';
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background-color: var(--jet-black);
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+  }
+  .offerings-list-second-item {
+    order: 2;
+    margin-top: 86px;
+    position: relative;
+  }
+  .offerings-list-second-item::after {
+    content: '';
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background-color: var(--jet-black);
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+  }
+  .offerings-list-third-item {
+    order: 0;
+    align-self: flex-start;
+    position: relative;
+  }
+  .offerings-list-third-item::after {
+    content: '';
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background-color: var(--jet-black);
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 205px;
+    left: 80px;
+  }
+  .offerings-list-fourth-item {
+    order: 5;
+    margin-top: 86px;
+    position: relative;
+  }
+  .offerings-list-fourth-item::after {
+    content: '';
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background-color: var(--jet-black);
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+  }
+  .offerings-list-femth-item {
+    order: 3;
+    position: relative;
+  }
+  .offerings-list-femth-item::after {
+    content: '';
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background-color: var(--jet-black);
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 218px;
+    left: 80px;
+  }
+}
+
 /* DESCTOP */
 
 /* @media screen and (min-width: 1440px) {
