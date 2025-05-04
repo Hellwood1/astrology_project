@@ -103,6 +103,14 @@
   gap: 40px;
 }
 
+.social-link:focus .social-svg,
+.social-link:hover .social-svg {
+  fill: var(--luxe-gold);
+}
+.social-link:focus {
+  outline: none;
+}
+
 @media screen and (min-width: 768px) {
   .card-wrapper {
     height: 705px;

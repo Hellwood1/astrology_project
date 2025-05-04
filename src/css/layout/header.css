@@ -18,6 +18,12 @@
   fill: var(--ghost-white);
 }
 
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
+  fill: var(--luxe-gold);
+  outline: none;
+}
+
 .mobile-menu-svg {
   width: 30px;
   height: 30px;
@@ -39,6 +45,7 @@
 .sound-btn:hover,
 .sound-btn:focus {
   fill: var(--luxe-gold);
+  outline: none;
 }
 .sound-btn-text {
   display: none;
@@ -102,9 +109,10 @@
     margin-bottom: auto;
   }
 
-  .nav-menu > li:hover,
-  .nav-menu > li:focus {
+  .nav-menu > li > a:hover,
+  .nav-menu > li > a:focus {
     color: var(--luxe-gold);
+    outline: none;
   }
 
   .nav {
