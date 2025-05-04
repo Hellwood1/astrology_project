@@ -235,6 +235,11 @@
     transform: var(--timing-function);
   }
 
+  .arrow-btn:hover,
+  .arrow-btn:focus {
+    outline: none;
+  }
+
   /* Анімування каруселі */
 
   @keyframes slideInFromRight {
