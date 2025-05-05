@@ -8,8 +8,7 @@ let current = 0;
 let previous = 0;
 let dragging = false;
 let animationFrame;
-
-const cardWidth = items[0].offsetWidth + 30;
+const cardWidth = items[0].offsetWidth + 30; // Gap between cards
 
 // -------------------- Свайпер --------------------
 slider.addEventListener('touchstart', (e) => {
@@ -28,7 +27,7 @@ slider.addEventListener('touchmove', (e) => {
 slider.addEventListener('touchend', () => {
   dragging = false;
   cancelAnimationFrame(animationFrame);
-  handleLimitScroll();
+  centerNearestCard();
 });
 
 function updateSlider() {
@@ -57,9 +56,7 @@ if (prevBtn && nextBtn) {
 function handleLimitScroll(direction = '') {
   const maxShift = slider.offsetWidth - slider.scrollWidth;
 
-  const prev = current;
   current = Math.max(Math.min(0, current), maxShift);
-
   slider.style.transition = 'transform var(--timing-function)';
   slider.style.transform = `translateX(${current}px)`;
   previous = current;
@@ -70,6 +67,35 @@ function handleLimitScroll(direction = '') {
     shakeCard('first');
   } else if (current === maxShift && direction === 'right') {
     shakeCard('last');
+  }
+}
+
+// -------------------- Центрування карток на мобільних пристроях при свайпі --------------------
+function centerNearestCard() {
+  const containerRect = slider.parentElement.getBoundingClientRect();
+
+  let closestItem = null;
+  let closestDistance = Infinity;
+
+  items.forEach((item) => {
+    const itemRect = item.getBoundingClientRect();
+    const itemCenter = itemRect.left + itemRect.width / 2;
+    const containerCenter = containerRect.left + containerRect.width / 2;
+    const distance = Math.abs(itemCenter - containerCenter);
+
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closestItem = item;
+    }
+  });
+
+  if (closestItem) {
+    const itemRect = closestItem.getBoundingClientRect();
+    const containerCenter = containerRect.left + containerRect.width / 2;
+    const offset = itemRect.left + itemRect.width / 2 - containerCenter;
+
+    current -= offset;
+    handleLimitScroll();
   }
 }
 
@@ -92,7 +118,6 @@ function getVisibleCard() {
   });
 }
 
-// -------------------- Реалізовано візуал для показу останньої картки в списку --------------------
 function shakeCard(position) {
   let target;
   if (position === 'first') {
@@ -109,7 +134,7 @@ function shakeCard(position) {
   }
 }
 
-// -------------------- Зникання лівої та правої кнопки за умови останнього елементу в каруселі --------------------
+
 function toggleArrowButtons(current, maxShift) {
   if (current === 0) {
     prevBtn.style.opacity = '0';
@@ -127,3 +152,4 @@ function toggleArrowButtons(current, maxShift) {
     nextBtn.style.pointerEvents = 'auto';
   }
 }
+
