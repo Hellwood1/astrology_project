@@ -434,14 +434,16 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 218px;
-    background-image: url('./../img/regres/desert-bg-tablet-1x.jpg');
+    height: 276px;
+    background-image: url('./../img/regres/desert-bg-tablet-1x.png');
+    filter: grayscale(100%);
   }
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .regres-bg-img {
-      background-image: url('./../img/regres/desert-bg-tablet-2x.jpg');
+      background-image: url('./../img/regres/desert-bg-tablet-2x.png');
+      filter: grayscale(100%);
     }
   }
 }
@@ -476,6 +478,8 @@
   }
   .church-desk-style {
     display: flex;
+    justify-content: center;
+    gap: 30px;
     padding: 40px;
     position: relative;
     left: 50%;
@@ -488,7 +492,12 @@
     align-items: center;
     margin-bottom: 140px;
   }
+  .regres-little-conteiner {
+    width: 665px;
+  }
   .health-church-box {
+    width: 665px;
+    padding: 0;
     position: static;
     margin: 0;
     border: none;
@@ -498,7 +507,6 @@
     line-height: 1.13;
   }
   .health-church-content {
-    width: 665px;
     font-size: 32px;
     line-height: normal;
   }
@@ -534,14 +542,14 @@
     align-items: center;
     padding-bottom: 60px;
   }
-  .regres-absolute-box {
+  .regres-relative-box {
     position: relative;
   }
   .regres-answers-list {
     position: absolute;
     width: 1128px;
     display: grid;
-    right: 150px;
+    right: 80px;
     grid-template-columns: 1fr 1fr;
     column-gap: 435px;
     row-gap: 87px;
@@ -603,13 +611,15 @@
     background-repeat: no-repeat;
     height: 518px;
     aspect-ratio: 720/259;
-    background-image: url('./../img/regres/desert-bg-desk-1x.jpg');
+    background-image: url('./../img/regres/desert-bg-desk-1x.png');
+    filter: grayscale(100%);
   }
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .regres-bg-img {
-      background-image: url('./../img/regres/desert-bg-desk-2x.jpg');
+      background-image: url('./../img/regres/desert-bg-desk-2x.png');
+      filter: grayscale(100%);
     }
   }
 }
