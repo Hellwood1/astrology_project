@@ -1,0 +1,175 @@
+.taro-section {
+  height: 877px;
+  flex-shrink: 0;
+  background: var(--jet-black);
+}
+.taro-title {
+  color: var(--ghost-white);
+  text-align: center;
+  font-family: Forum;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18; /* 118.182% */
+  text-transform: uppercase;
+  padding-top: 79px;
+  padding-bottom: 36px;
+}
+.taro-title-box {
+  position: relative;
+}
+.star-svg {
+  width: 19px;
+  height: 21px;
+  flex-shrink: 0;
+  fill: var(--ghost-white);
+  position: absolute;
+  top: 52px;
+  right: 33px;
+}
+.taro-cards-li {
+  min-width: 304px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  padding: 30px 16px;
+  flex-shrink: 0;
+  border-radius: 26px;
+  background: var(--ghost-white);
+}
+/* .taro-swiper .swiper-slide {
+  width: 304px;
+  flex-shrink: 0;
+}
+.taro-swiper,
+.taro-swiper .swiper-wrapper {
+  overflow: visible !important;
+  column-gap: ;
+} */
+.taro-design-svg {
+  flex-shrink: 0;
+  fill: var(--jet-black);
+  width: 24px;
+  height: 24px;
+}
+.taro-design-svg use {
+  width: 100%;
+  height: 100%;
+}
+.taro-time {
+  color: var(--jet-black);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56; /* 156.25% */
+}
+.taro-time-box {
+  display: flex;
+  justify-content: end;
+  gap: 11px;
+  margin-bottom: 24px;
+}
+.taro-little-title {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--jet-black);
+  color: var(--ghost-white);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25; /* 125% */
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.taro-inside-list {
+  color: var(--jet-black);
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 25px;
+  margin-bottom: 24px;
+}
+.taro-inside-list li::marker {
+  font-size: 0.7em;
+}
+.taro-price {
+  color: var(--jet-black);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.taro-gift-text {
+  color: var(--jet-black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+.taro-gift-box {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+/* .custum-btn-pos {
+  margin-top: 101px;
+  display: flex;
+  justify-content: center;
+} */
+.taro-tg-btn {
+  display: inline-flex;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 18px;
+  border: 1px solid var(--jet-black);
+  background-color: transparent;
+  outline: none;
+  color: var(--jet-black);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.56;
+}
+.taro-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taro-tg-svg {
+  fill: var(--jet-black);
+  height: 30px;
+  flex: 1 0 0;
+  aspect-ratio: 1/1;
+}
+.taro-tg-btn:focus {
+  outline: none;
+}
+
+.taro-tg-btn:hover .taro-tg-svg,
+.taro-tg-btn:focus .taro-tg-svg {
+  fill: var(--luxe-gold);
+}
+.taro-swiper-btns {
+  display: none;
+}

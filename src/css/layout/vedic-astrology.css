@@ -148,6 +148,7 @@
   border: 1px solid var(--ghost-white);
 }
 .vedic-design-svg {
+  fill: var(--ghost-white);
   width: 24px;
   height: 24px;
   aspect-ratio: 1/1;
