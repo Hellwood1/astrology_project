@@ -1,0 +1,195 @@
+.retreat-section-container {
+  padding: 80px 0 40px 0;
+}
+
+.retreat-title {
+  font-family: 'Forum';
+  font-size: 44px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.18;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.retreat-text {
+  font-size: 16px;
+  line-height: 1.56;
+  margin-bottom: 24px;
+}
+
+.retreat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 315px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-bottom: 32px;
+}
+
+.retreat-img {
+  margin-bottom: 40px;
+}
+
+.retreat-video-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.retreat-video-wrapper {
+  height: auto;
+  border-radius: 24px;
+}
+
+/* TABLET*/
+
+@media screen and (min-width: 768px) {
+  .retreat-section-container {
+    padding: 100px 0 60px 0;
+  }
+
+  .retreat-title {
+    font-size: 54px;
+    line-height: 1.25;
+    margin-bottom: 48px;
+  }
+
+  .check-size {
+    max-width: 556px;
+  }
+
+  .retreat-text {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 24px;
+    margin: 0 auto 32px auto;
+  }
+
+  .retreat-list {
+    width: 688px;
+    line-height: 1.75;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .retreat-list-item {
+    width: calc(50% - 26px);
+  }
+
+  .retreat-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .retreat-video-container {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
+  .retreat-video-wrapper {
+    width: 330px;
+    border-radius: 26px;
+  }
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .retreat-section-container {
+    padding: 154px 0 70px 0;
+  }
+
+  .retreat-title {
+    font-size: 80px;
+    line-height: 1.12;
+    margin-bottom: 80px;
+  }
+
+  .retreat-text {
+    font-size: 18px;
+    margin-bottom: 24px;
+    margin: 0 auto 70px auto;
+  }
+
+  .check-size {
+    max-width: 896px;
+  }
+  .retreat-list {
+    width: 1128px;
+    height: 418px;
+    gap: 112px;
+    padding-top: 10px;
+    list-style-type: none;
+  }
+
+  .retreat-list-item {
+    width: calc(50% - 260px);
+    height: 56px;
+    text-align: center;
+  }
+
+  .retreat-img-wrapper {
+    position: relative;
+  }
+
+  .retreat-img {
+    position: absolute;
+    left: 496px;
+    top: 488px;
+    width: 434.395px;
+    height: 418px;
+    border-radius: 400px;
+  }
+
+  /* Позиціонування елементів списку навколо картинкми */
+
+  .first-retreat-card {
+    width: 340px;
+  }
+
+  .second-retreat-card {
+    width: 320px;
+  }
+
+  .first-retreat-card,
+  .fifth-retreat-card {
+    margin-left: 4px;
+  }
+
+  .second-retreat-card,
+  .sixth-retreat-card {
+    margin-right: 50px;
+  }
+
+  /* Кастомна крапка для PC версії списку
+  Примітка: Для мобільної та планшетної версії я використовув саме стандартну версію 'display-style-type',
+  але під час написання стилів для ПК версії я зіщтовнухвся з складністю позиціонування крапки, то ж вирішив прибігти до такого варіанту */
+
+  .retreat-elips::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: var(--jet-black);
+  }
+
+  .retreat-video-container {
+    justify-content: center;
+  }
+
+  .retreat-video-wrapper {
+    width: 434px;
+    cursor: pointer;
+  }
+}
