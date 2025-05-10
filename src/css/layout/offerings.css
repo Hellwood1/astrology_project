@@ -143,7 +143,7 @@
 
 /* DESCTOP */
 
-/* @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .offerings-section {
     padding-top: 70px;
     position: relative;
@@ -156,60 +156,82 @@
     width: 1360px;
   }
 
-  .offerings-wrapper {
-    position: absolute;
+  .offerings-list-item-text {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.55;
+    width: 194px;
   }
 
+  .elips::before {
+    display: none;
+  }
   .offerings-list {
     display: flex;
     column-gap: 40px;
     margin: 0 0 0 50px;
     align-self: flex-start;
   }
-
   .offerings-list-first-item {
     margin-top: 60px;
+    position: relative;
   }
+  .offerings-list-first-item::after,
+  .offerings-list-second-item::after,
+  .offerings-list-third-item::after,
+  .offerings-list-fourth-item::after,
+  .offerings-list-femth-item::after {
+    content: '';
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background-color: var(--jet-black);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 186px;
+    left: 70px;
+  }
+
+  .offerings-list-first-item::after{
+    top: 186px;
+    left: 70px;
+  }
+
   .offerings-list-second-item {
     order: 2;
     margin-top: 86px;
+    position: relative;
+  }
+  .offerings-list-second-item::after {
+    top: 160px;
+    left: 80px;
   }
   .offerings-list-third-item {
     order: 0;
     align-self: flex-start;
+    position: relative;
+  }
+  .offerings-list-third-item::after {
+    top: 240px;
+    left: 80px;
   }
   .offerings-list-fourth-item {
     order: 5;
     margin-top: 86px;
+    position: relative;
+  }
+  .offerings-list-fourth-item::after {
+    top: 160px;
+    left: 80px;
   }
   .offerings-list-femth-item {
     order: 3;
+    position: relative;
   }
-
-  .offerings-list-item-text {
-    display: flex;
-    flex-direction: column;
-    width: 194px;
-    font-size: 18px;
-    line-height: 1.55;
-  }
-
-  .elips::before {
-    content: none;
-  }
-
-  .elips::after {
-    content: '';
-    display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: var(--jet-black);
-    border-radius: 50%;
-    margin-right: 18px;
-
-    position: absolute;
-    top: 246px;
-    z-index: 100;
+  .offerings-list-femth-item::after {
+    top: 250px;
+    left: 80px;
   }
 
   .offerings-bg-img {
@@ -224,4 +246,59 @@
       background-image: url('./../img/offerings/bg-sea-desktop@2x.png');
     }
   }
-} */
+
+
+
+
+  @media screen and (min-width: 1600px) {
+    .offerings-list-first-item::after {
+      top: 210px;
+    }
+
+    .offerings-list-second-item::after {
+      top: 168px;
+    }
+
+    .offerings-list-third-item::after {
+      top: 250px;
+    }
+
+    .offerings-list-fourth-item::after {
+      top: 170px;
+    }
+
+    .offerings-list-femth-item::after {
+      top: 256px;
+    }
+  }
+
+
+
+  /* >= 1920px — Full HD */
+  @media (min-width: 1920px) {
+    .offerings-list-first-item::after {
+      top: 220px;
+    }
+
+    .offerings-list-second-item::after {
+      top: 184px ;
+    }
+
+    .offerings-list-third-item::after {
+      top: 264px;
+    }
+
+    .offerings-list-fourth-item::after {
+      top: 186px;
+    }
+
+    .offerings-list-femth-item::after {
+      top: 272px;
+    }
+  }
+
+  /* >= 2560px — 2K дисплеї */
+  @media (min-width: 2560px) {
+    /* Стили для 2K дисплеїв */
+  }
+}
