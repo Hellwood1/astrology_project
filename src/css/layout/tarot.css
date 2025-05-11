@@ -9,9 +9,7 @@
 .swiper-wrapper {
   min-height: 672px;
 }
-/* .taro-swiper {
-  height: 1000px;
-} */
+
 .taro-title {
   color: var(--ghost-white);
   text-align: center;
