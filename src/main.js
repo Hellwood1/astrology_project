@@ -3,4 +3,4 @@ import './js/modal.js'
 import './js/swiper.js'
 import './js/matrix-slider.js'
 import './js/taro-swiper.js'
-
+import './js/reiki-swiper'

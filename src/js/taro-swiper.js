@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.taro-swiper-init', {
-  loop: true,
+  loop: false,
   navigation: {
     nextEl: '.taro-right-swiper-btn',
     prevEl: '.taro-left-swiper-btn',
