@@ -1,0 +1,605 @@
+.reiki-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.reiki-custom-box {
+  padding-right: 0;
+}
+.reiki-main-title {
+  color: var(--jet-black);
+  text-align: center;
+  font-family: Forum;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18; /* 118.182% */
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  padding-right: 20px;
+}
+.reiki-content {
+  color: var(--jet-black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56; /* 156.25% */
+  margin-bottom: 32px;
+  padding-right: 20px;
+}
+.reiki-ya {
+  color: var(--dusty-blue);
+  font-family: 'Forum';
+  font-size: 38px;
+  line-height: normal;
+  text-transform: uppercase;
+  transform: rotate(-9deg);
+  padding: 0px 10px 18px 10px;
+  gap: 10px;
+  width: 74px;
+  height: 78px;
+  border-radius: 12px;
+  border: 1px solid var(--dusty-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reiki-two-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding-right: 20px;
+}
+.reiki-ya-content {
+  flex: 1 0 0;
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56; /* 156.25% */
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  background: var(--dusty-blue);
+  margin-bottom: 60px;
+}
+.reiki-answers {
+  display: flex;
+  width: 304px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 19px;
+  color: var(--jet-black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56; /* 156.25% */
+  margin-bottom: 32px;
+}
+.reiki-answers li::marker {
+  font-size: 0.7em;
+}
+.reiki-pic img {
+  width: 321.12px;
+  height: 309px;
+  flex-shrink: 0;
+  aspect-ratio: 321.12/309;
+  border-radius: 400px;
+  background: url(/src/img/reiki/reiki-desk-1x.jpg) lightgray 50% / cover
+    no-repeat;
+}
+.reiki-pic {
+  display: block;
+  margin-bottom: 60px;
+}
+.reiki-swiper-init {
+  position: relative;
+  right: 9px;
+  z-index: 999;
+}
+.reiki-services-list li {
+  width: 320px;
+}
+.reiki-services-list-item {
+  display: flex;
+  width: 304px;
+  height: 589px;
+  padding: 30px 16px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 26px;
+  border: 1.2px solid var(--jet-black);
+}
+.reiki-services-time {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.56;
+  align-items: center;
+  column-gap: 11px;
+  margin: 0 0 24px auto;
+}
+.reiki-what-is {
+  font-weight: 700;
+}
+.reiki-services-list-title {
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: var(--dusty-blue);
+}
+.reiki-services-text-wrapper {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.reiki-services-price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.gift-svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.reiki-services-gift-text {
+  display: flex;
+  column-gap: 18px;
+  margin-bottom: 32px;
+}
+
+.reiki-services-btn {
+  color: var(--jet-black);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.56; /* 156.25% */
+  display: flex;
+  padding: 12px 14px;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  line-height: 1.56;
+  margin-top: auto;
+  border-radius: 18px;
+  border: 1px solid var(--jet-black);
+}
+
+.reiki-services-btn:hover .telegram-svg-wrapper,
+.reiki-services-btn:focus .telegram-svg-wrapper {
+  fill: var(--luxe-gold);
+}
+.reiki-services-btn:focus {
+  outline: none;
+}
+.reiki-package-list {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.reiki-hypno-box {
+  padding: 24px 16px;
+  width: 320px;
+  border-radius: 26px;
+  background: var(--dusty-blue);
+}
+.reiki-hypno-time {
+  display: flex;
+  gap: 11px;
+  justify-content: end;
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.56; /* 156.25% */
+  margin-bottom: 26px;
+}
+.reiki-star-svg {
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin: 0 auto 26px;
+}
+.reiki-card-title {
+  padding: 12px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--ghost-white);
+  color: var(--dusty-blue);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25; /* 125% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.reiki-custom-number {
+  font-style: italic;
+}
+.reiki-card-content {
+  align-self: stretch;
+  color: var(--ghost-white);
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.56; /* 156.25% */
+  margin-bottom: 26px;
+}
+.reiki-custom-content {
+  font-weight: 700;
+}
+.custom-span {
+  font-style: 18px;
+  line-height: 1.56;
+}
+.reiki-cards-price {
+  align-self: stretch;
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.reiki-card-gift {
+  display: flex;
+  gap: 18px;
+  color: var(--ghost-white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.56; /* 156.25% */
+  fill: var(--ghost-white);
+  margin-bottom: 24px;
+}
+.reiki-card-gift svg {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.reiki-card-gift p {
+  width: 246px;
+  height: 50px;
+}
+.reiki-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reiki-tg {
+  width: 168px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.56;
+  padding: 12px 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 18px;
+  border: 1px solid var(--ghost-white);
+}
+.reiki-telegram-svg {
+  width: 29px;
+  height: 30px;
+  fill: var(--ghost-white);
+}
+.reiki-tg:focus {
+  outline: none;
+}
+.reiki-tg:hover .reiki-telegram-svg,
+.reiki-tg:focus .reiki-telegram-svg {
+  fill: var(--luxe-gold);
+}
+
+@media screen and (min-width: 768px) {
+  .reiki-section {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .reiki-main-title {
+    font-size: 54px;
+    line-height: 1.26;
+    margin-bottom: 36px;
+    padding-right: 48px;
+  }
+  .reiki-content {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 44px;
+    padding-right: 40px;
+    width: 556px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reiki-ya {
+    font-size: 53px;
+    transform: rotate(-14deg);
+    padding: 0px 10px 24px 10px;
+    gap: 10px;
+    width: 94px;
+    height: 84px;
+  }
+  .reiki-ya-content {
+    line-height: 1.75;
+    margin-bottom: 0px;
+  }
+  .reiki-two-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-right: 40px;
+    margin-bottom: 80px;
+  }
+  .reiki-answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 46px;
+    row-gap: 16px;
+    width: 100%;
+    padding-left: 19px;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 32px;
+    padding-right: 40px;
+  }
+  .reiki-pic img {
+    width: 428.16px;
+    height: 412px;
+    aspect-ratio: 428.16/412;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reiki-pic {
+    margin-bottom: 80px;
+  }
+  .reiki-services-list li {
+    right: 15px;
+    width: 665px;
+    margin-right: 30px;
+  }
+  .reiki-services-list-item {
+    width: 665px;
+    height: 566px;
+    padding: 40px 24px;
+  }
+  .reiki-swiper-init {
+    right: 2px;
+  }
+  .reiki-services-time {
+    line-height: 1.75;
+    column-gap: 12px;
+    margin: 0 0 32px auto;
+  }
+  .reiki-services-list-title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.4;
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+  .reiki-services-text-wrapper {
+    margin-bottom: 32px;
+    line-height: 1.75;
+  }
+  .reiki-services-price {
+    font-size: 28px;
+    line-height: 0.86;
+    margin-bottom: 24px;
+  }
+  .reiki-services-gift-text {
+    line-height: 1.75;
+    margin-bottom: 44px;
+  }
+  .reiki-services-btn {
+    font-size: 18px;
+    line-height: 1.56; /* 156.25% */
+    padding: 14px 18px;
+    margin-top: auto;
+  }
+  .reiki-package-list {
+    margin-right: 40px;
+    gap: 30px;
+  }
+  .reiki-hypno-box {
+    padding: 40px 24px;
+    width: 688px;
+  }
+  .reiki-hypno-time {
+    font-size: 18px;
+    line-height: 1.56; /* 156.25% */
+    margin-bottom: 32px;
+  }
+  .reiki-star-svg {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 32px;
+  }
+  .reiki-card-title {
+    padding: 12px;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  .custom-span {
+    content: '';
+    display: block;
+  }
+  .reiki-card-content {
+    margin-bottom: 32px;
+  }
+  .reiki-cards-price {
+    font-size: 28px;
+    line-height: 0.86;
+  }
+  .reiki-card-gift {
+    line-height: 1.75;
+    margin-bottom: 44px;
+  }
+  .reiki-card-gift p {
+    width: 100%;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reiki-section {
+    padding-top: 70px;
+    padding-bottom: 140px;
+  }
+
+  .reiki-main-title {
+    font-size: 80px;
+    line-height: 1.13;
+    margin-bottom: 80px;
+  }
+  .reiki-content {
+    font-size: 18px;
+    line-height: 1.56;
+    width: 936px;
+  }
+  .reiki-ya {
+    font-size: 64px;
+    gap: 9px;
+    width: 109px;
+    height: 95px;
+  }
+  .reiki-ya-content {
+    width: 860px;
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 0px;
+  }
+  .reiki-two-boxes {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+    margin-bottom: 120px;
+  }
+  .reiki-pic-list-position {
+    position: relative;
+  }
+  .reiki-answers {
+    column-gap: 484px;
+    row-gap: 45px;
+    width: 1228px;
+    padding-left: 19px;
+    font-size: 18px;
+    line-height: 1.56;
+    position: absolute;
+    left: 10%;
+    top: 2%;
+    list-style: disc inside;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .reiki-pic img {
+    width: 434.395px;
+    height: 418px;
+    aspect-ratio: 434.39/418;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reiki-pic {
+    margin-bottom: 74px;
+  }
+
+  .reiki-services-list {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    column-gap: 30px;
+    gap: 30px;
+    left: -17px;
+    margin-bottom: 140px;
+  }
+  .reiki-swiper-init {
+    height: auto;
+  }
+  .reiki-services-list li {
+    margin-right: 0px;
+    position: static;
+  }
+  .reiki-services-list-item {
+    width: 665px;
+    height: 566px;
+    padding: 40px 24px;
+  }
+
+  .reiki-services-time {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .reiki-services-list-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .reiki-services-text-wrapper {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .reiki-services-price {
+    font-size: 29px;
+    line-height: 0.83;
+  }
+  .reiki-services-gift-text {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .reiki-package-list {
+    flex-direction: row;
+    margin-right: 40px;
+    gap: 30px;
+  }
+  .reiki-hypno-box {
+    padding: 40px 24px;
+    width: 688px;
+  }
+
+  .reiki-card-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+
+  .reiki-cards-price {
+    font-size: 29px;
+    line-height: 0.83;
+  }
+  .reiki-card-gift {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
