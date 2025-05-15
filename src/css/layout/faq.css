@@ -1,0 +1,122 @@
+.faq-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.ac-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    height 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 32px;
+}
+
+.ac.is-active .ac-panel {
+  max-height: 100%;
+  margin-bottom: 16px;
+}
+.faq-title {
+  color: var(--jet-black);
+  text-align: center;
+  font-family: Forum;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18; /* 118.182% */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.faq-list {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.faq-list-item-title {
+  height: auto;
+}
+.faq-btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+  align-self: stretch;
+  text-align: left;
+}
+.faq-list-item {
+  border: 1px solid var(--jet-black);
+  border-radius: 26px;
+  height: auto;
+}
+
+.open-close-icon {
+  height: 30px;
+  width: 30px;
+  flex-shrink: 0;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 33px;
+  border: 1px solid var(--luxe-gold);
+  background: var(--luxe-gold);
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: transform 0.6s ease;
+}
+
+.ac.is-active .open-close-icon {
+  transform: rotate(45deg);
+}
+.faq-btn {
+  color: var(--jet-black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.56; /* 156.25% */
+}
+.faq-text {
+  align-self: stretch;
+  color: var(--jet-black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56; /* 156.25% */
+}
+
+@media screen and (min-width: 768px) {
+  .faq-section {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  .faq-title {
+    margin-bottom: 60px;
+  }
+  .faq-btn {
+    padding: 24px 32px;
+  }
+  .button-text {
+    width: 558px;
+    line-height: 1.75; /* 175% */
+  }
+  .faq-text {
+    line-height: 1.75; /* 175% */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button-text {
+    width: 766px;
+  }
+  .faq-list {
+    width: 896px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
