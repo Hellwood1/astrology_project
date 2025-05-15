@@ -349,8 +349,7 @@
     width: 434.395px;
     height: 418px;
     aspect-ratio: 434.39/418;
-    background: url(<path-to-image>) lightgray -9.105px -21.204px / 101.981%
-      105.981% no-repeat;
+    background: lightgray -9.105px -21.204px / 101.981% 105.981% no-repeat;
     left: 503px;
     top: 371px;
   }

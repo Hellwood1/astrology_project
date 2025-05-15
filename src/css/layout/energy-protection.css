@@ -1,0 +1,508 @@
+.energy-protection-section {
+  padding: 40px 0 80px 0;
+}
+
+.energy-protection-first-title,
+.energy-protection-second-title {
+  font-family: 'Forum';
+  text-align: center;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.18;
+  text-transform: uppercase;
+}
+
+.energy-protection-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 40px 0;
+  margin: 36px 0;
+
+  border-top: 1px solid var(--jet-black);
+  border-bottom: 1px solid var(--jet-black);
+}
+
+.energy-protection-hand-icon {
+  display: flex;
+  width: 102px;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.energy-protection-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.energy-protection-pre-text {
+  font-family: 'Forum';
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.27;
+  text-transform: uppercase;
+}
+.bold-text {
+  font-weight: 700;
+}
+
+.energy-protection-text,
+.energy-protection-block-title,
+.energy-protection-first-text,
+.energy-protection-second-text,
+.energy-protection-third-text,
+.energy-protection-fourth-text,
+.energy-protection-first-list,
+.energy-protection-second-list {
+  font-size: 16px;
+  line-height: 1.56;
+}
+
+.energy-protection-first-text {
+  margin-bottom: 30px;
+}
+
+.energy-protection-fourth-text {
+  display: none;
+}
+
+.energy-protection-first-list {
+  max-width: 293px;
+  list-style-type: disc;
+  margin: 0 0 30px auto;
+}
+
+.energy-protection-third-text {
+  margin-bottom: 60px;
+}
+
+.energy-protection-second-list {
+  max-width: 296px;
+  list-style-type: disc;
+  margin: 0 0 60px auto;
+}
+
+.energy-protection-second-list-item-first-element {
+  margin-bottom: 16px;
+}
+
+.energy-protection-second-list-item-fourth-element {
+  list-style-type: none;
+}
+
+.energy-protection-second-list-item-third-element {
+  margin: 16px 0 24px 0;
+}
+
+.energy-protection-second-list-item-fifth-element {
+  margin: 24px 0 16px 0;
+}
+
+.energy-protection-second-list-item-seventh-element {
+  margin: 16px 0 0 0;
+}
+
+.energy-protection-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 16px;
+
+  border-radius: 26px;
+  border: 1.2px solid var(--jet-black);
+}
+
+.energy-potection-time-svg {
+  display: block;
+}
+
+.energy-protection-card-time {
+  font-size: 16px;
+  line-height: 1.75;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 10px;
+  margin-bottom: 24px;
+}
+
+.energy-protection-card-title {
+  color: var(--ghost-white);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--dusty-blue);
+  margin-bottom: 18px;
+}
+
+.energy-protection-price {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 24px 0 18px 0;
+}
+
+.energy-protection-gift {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  margin-bottom: 32px;
+}
+
+.energy-protection-link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.56;
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid var(--jet-black);
+  margin: 0 auto;
+}
+
+.energy-protection-road-svg {
+  height: 260px;
+  position: relative;
+  right: 20px;
+}
+/* TABLET*/
+
+@media screen and (min-width: 768px) {
+  .energy-protection-section {
+    padding: 50px 0 60px 0;
+  }
+
+  .energy-protection-first-title,
+  .energy-protection-second-title {
+    font-size: 54px;
+    line-height: 1.25;
+  }
+
+  .energy-protection-first-title {
+    margin-bottom: 48px;
+  }
+
+  .energy-protection-hand-icon {
+    width: 148px;
+    height: 184px;
+  }
+
+  .energy-protection-pre-text {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  .energy-protection-text-container {
+    margin-bottom: 120px;
+  }
+
+  .energy-protection-first-text {
+    margin-bottom: 40px;
+  }
+
+  .energy-protection-first-list {
+    max-width: none;
+    margin: 0 0 40px 26px;
+  }
+
+  .energy-protection-third-text {
+    display: none;
+  }
+
+  .energy-protection-fourth-text {
+    display: inline;
+  }
+
+  .energy-protection-text,
+  .energy-protection-block-title,
+  .energy-protection-first-text,
+  .energy-protection-second-text,
+  .energy-protection-third-text,
+  .energy-protection-fourth-text,
+  .energy-protection-first-list,
+  .energy-protection-second-list {
+    line-height: 1.75;
+  }
+
+  .energy-protection-second-list {
+    position: relative;
+    max-width: none;
+    list-style-type: none;
+    margin-bottom: 148px;
+  }
+
+  /* Поизціонування лінії шляху */
+  .enery-protection-road-svg {
+    width: 400px;
+    height: 356px;
+    left: 20%;
+  }
+
+  /* Позиціонування пунктів списку навколо лінії */
+
+  .energy-protection-second-list-item-first-element,
+  .energy-protection-second-list-item-second-element,
+  .energy-protection-second-list-item-third-element,
+  .energy-protection-second-list-item-fifth-element,
+  .energy-protection-second-list-item-sixth-element,
+  .energy-protection-second-list-item-seventh-element {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+  }
+
+  .energy-protection-second-list-item-first-element {
+    width: 154px;
+    height: 56px;
+    top: -70px;
+    left: 92px;
+  }
+
+  .energy-protection-second-list-item-second-element {
+    width: 136px;
+    height: 112px;
+    top: -10px;
+    left: 550px;
+  }
+
+  .energy-protection-second-list-item-third-element {
+    width: 137px;
+    height: 56px;
+    top: 147px;
+    left: 20px;
+  }
+
+  .energy-protection-second-list-item-fifth-element {
+    width: 137px;
+    height: 62px;
+    top: 226px;
+    left: 550px;
+  }
+
+  .energy-protection-second-list-item-sixth-element {
+    width: 137px;
+    height: 58px;
+    top: 310px;
+    left: 272px;
+  }
+
+  .energy-protection-second-list-item-seventh-element {
+    width: 123px;
+    height: 56px;
+    top: 370px;
+    left: 108px;
+  }
+
+  /* Картка з послугою  */
+
+  .energy-protection-card-wrapper {
+    padding: 40px 24px;
+  }
+
+  .energy-protection-card-time {
+    margin-bottom: 32px;
+  }
+
+  .energy-protection-card-title {
+    font-size: 30px;
+    line-height: 1.4;
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+
+  .energy-protection-price {
+    font-size: 28px;
+    margin: 32px 0 24px 0;
+  }
+
+  .energy-protection-gift {
+    margin-bottom: 44px;
+  }
+
+  .energy-protection-link-btn {
+    padding: 14px 18px;
+  }
+  .energy-protection-link-btn:hover .telegram-svg-wrapper,
+  .energy-protection-link-btn:focus .telegram-svg-wrapper {
+    fill: var(--luxe-gold);
+  }
+}
+
+/* DESCTOP */
+
+@media screen and (min-width: 1440px) {
+  .energy-protection-section {
+    padding: 70px 0;
+  }
+
+  .energy-protection-first-title {
+    margin-bottom: 80px;
+  }
+
+  .energy-protection-first-title,
+  .energy-protection-second-title {
+    font-size: 80px;
+    line-height: 1.12;
+  }
+
+  .energy-protection-block-wrapper {
+    display: flex;
+    padding: 40px 0;
+    column-gap: 30px;
+    margin-bottom: 138px;
+    border-top: 1px solid var(--jet-black);
+    border-bottom: 1px solid var(--jet-black);
+  }
+
+  /* Стилізація лівого блоку */
+
+  .energy-protection-text-container {
+    max-width: 665px;
+    margin-bottom: 0;
+  }
+
+  .energy-protection-wrapper {
+    max-width: 665px;
+    border: none;
+    row-gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .energy-protection-hand-icon {
+    width: 154px;
+    height: 190px;
+    margin-top: 50px;
+  }
+
+  .energy-protection-text-wrapper {
+    row-gap: 16px;
+  }
+
+  /* Стилізація правого блоку */
+
+  .energy-protection-block-title {
+    margin-bottom: 20px;
+  }
+
+  .energy-protection-first-text {
+    margin-bottom: 36px;
+  }
+
+  .energy-protection-text,
+  .energy-protection-block-title,
+  .energy-protection-first-text,
+  .energy-protection-second-text,
+  .energy-protection-third-text,
+  .energy-protection-fourth-text,
+  .energy-protection-first-list,
+  .energy-protection-second-list {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .energy-protection-first-list {
+    margin-bottom: 20px;
+  }
+
+  .energy-protection-first-list > li {
+    margin-left: 6px;
+  }
+
+  /* Позиціонування лінії */
+
+  .enery-protection-road-svg {
+    width: 596px;
+    height: 524px;
+    left: 27%;
+  }
+
+  /* Позиціонування пунктів списку навколо лінії */
+
+  .energy-protection-second-list-item-first-element,
+  .energy-protection-second-list-item-second-element,
+  .energy-protection-second-list-item-third-element,
+  .energy-protection-second-list-item-fifth-element,
+  .energy-protection-second-list-item-sixth-element {
+    width: 200px;
+  }
+
+  .energy-protection-second-list-item-first-element {
+    left: 310px;
+    top: -82px;
+  }
+
+  .energy-protection-second-list-item-second-element {
+    left: 984px;
+    top: 30px;
+  }
+
+  .energy-protection-second-list-item-third-element {
+    top: 236px;
+    left: 184px;
+  }
+
+  .energy-protection-second-list-item-fifth-element {
+    top: 390px;
+    left: 980px;
+  }
+
+  .energy-protection-second-list-item-sixth-element {
+    top: 470px;
+    left: 570px;
+  }
+
+  .energy-protection-second-list-item-seventh-element {
+    top: 550px;
+    left: 330px;
+    width: 180px;
+  }
+
+  /* Картка з послугою */
+
+  .energy-protection-card-wrapper {
+    max-width: 896px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .energy-protection-card-time {
+    font-size: 18px;
+    line-height: 1.55;
+    column-gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .energy-protection-card-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
+  .energy-protection-text {
+    text-align: center;
+  }
+
+  .energy-protection-price {
+    font-size: 28px;
+  }
+
+  .energy-protection-gift {
+    text-align: left;
+  }
+
+  .energy-protection-link-btn {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
