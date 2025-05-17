@@ -278,24 +278,25 @@
   padding-bottom: 32px;
   width: 320px;
 }
-.hypno-bg-img {
+.lila-bg-img {
   position: relative;
   left: 50%;
   right: 50%;
   width: 100vw;
   margin-left: -50vw;
   margin-right: -50vw;
-  background-size: cover;
-  background-position: top center;
+  background-size: auto;
+  background-position: center 47px;
   background-repeat: no-repeat;
   height: 237px;
-  background-image: url('/img/hypno/hypno-bg-mobile-1x.jpg');
+  background-image: url('/img/lila/lila-bg-mobile-1x.png');
 }
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .hypno-bg-img {
-    background-image: url('/img/hypno/hypno-bg-mobile-2x.jpg');
+  .lila-bg-img {
+    background-image: url('/img/lila/lila-bg-mobile-2x.png');
+    background-size: 360px 192px;
   }
 }
 
@@ -445,24 +446,25 @@
     font-size: 30px;
     padding-bottom: 60px;
   }
-  .hypno-bg-img {
+  .lila-bg-img {
     position: relative;
     left: 50%;
     right: 50%;
     width: 100vw;
     margin-left: -50vw;
     margin-right: -50vw;
-    background-size: cover;
+    background-size: auto;
     background-position: top center;
     background-repeat: no-repeat;
     height: 276px;
-    background-image: url('/img/hypno/hypno-bg-tablet-1x.jpg');
+    background-image: url('/img/lila/lila-bg-tablet-1x.png');
   }
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .hypno-bg-img {
-      background-image: url('/img/hypno/hypno-bg-tablet-2x.jpg');
+    .lila-bg-img {
+      background-image: url('/img/lila/lila-bg-tablet-2x.png');
+      background-size: 688px 276px;
     }
   }
 }
@@ -629,25 +631,26 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .hypno-bg-img {
+  .lila-bg-img {
     position: relative;
     left: 50%;
     right: 50%;
     width: 100vw;
     margin-left: -50vw;
     margin-right: -50vw;
-    background-size: cover;
-    background-position: top center;
+    background-size: auto;
+    background-position: center 20px;
     background-repeat: no-repeat;
     height: 518px;
     aspect-ratio: 720/259;
-    background-image: url('/img/hypno/hypno-bg-desk-1x.jpg');
+    background-image: url('/img/lila/lila-bg-desk-1x.png');
   }
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-    .hypno-bg-img {
-      background-image: url('/img/hypno/hypno-bg-desk-2x.jpg');
+    .lila-bg-img {
+      background-image: url('/img/lila/lila-bg-desk-2x.png');
+      background-size: 896px 498px;
     }
   }
 }

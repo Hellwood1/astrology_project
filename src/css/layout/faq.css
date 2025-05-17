@@ -3,7 +3,6 @@
   padding-bottom: 80px;
 }
 .ac-panel {
-  max-height: 0;
   overflow: hidden;
   transition:
     height 1.5s cubic-bezier(0.4, 0, 0.2, 1),
@@ -12,7 +11,6 @@
 }
 
 .ac.is-active .ac-panel {
-  max-height: 100%;
   margin-bottom: 16px;
 }
 .faq-title {
@@ -45,6 +43,17 @@
   gap: 24px;
   align-self: stretch;
   text-align: left;
+}
+.faq-btn svg {
+  transition: transform 2s ease;
+}
+
+.faq-btn:hover svg,
+.faq-btn:focus svg {
+  transform: rotate(360deg);
+}
+.faq-btn:focus {
+  outline: none;
 }
 .faq-list-item {
   border: 1px solid var(--jet-black);
