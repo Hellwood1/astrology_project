@@ -16,20 +16,36 @@ function openMenu() {
       escapeDeactivates: true,
       clickOutsideDeactivates: true,
       onActivate: () => {
-        console.log('Focus trapped inside mobile menu');
+        console.log('On');
       },
       onDeactivate: () => {
-        console.log('Focus trap deactivated');
+        console.log('Off');
       },
     });
   }
 
   focusTrap.activate();
+
+  refs.mobileMenu?.addEventListener('click', handleMenuItemClick);
 }
 
 function closeMenu() {
   refs.mobileMenu?.classList.remove('is-open');
   focusTrap?.deactivate();
+
+  refs.mobileMenu?.removeEventListener('click', handleMenuItemClick);
+}
+
+function handleMenuItemClick(event) {
+  const clickedEl = event.target;
+
+  if (
+    clickedEl.tagName === 'A' ||
+    clickedEl.tagName === 'BUTTON' ||
+    clickedEl.closest('[data-close]')
+  ) {
+    closeMenu();
+  }
 }
 
 refs.openBtn?.addEventListener('click', openMenu);
