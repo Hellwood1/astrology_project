@@ -265,9 +265,7 @@
     padding-top: 70px;
     padding-bottom: 80px;
   }
-  /* .taro-swiper {
-    padding-left: 13px;
-  } */
+
   .star-svg {
     width: 43px;
     height: 43px;
@@ -305,7 +303,7 @@
   }
   .taro-gift-box {
     font-size: 18px;
-    line-height: 1.56; /* 155.556% */
+    line-height: 1.56;
   }
   .taro-swiper-btns {
     position: absolute;
@@ -334,6 +332,7 @@
   .taro-left-swiper-btn svg {
     transform: rotate(180deg);
   }
+
   .taro-swiper-btns button:hover,
   .taro-swiper-btns button:focus {
     fill: var(--luxe-gold);
