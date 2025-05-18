@@ -1,0 +1,32 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  padding: 14px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 100px;
+  background: var(--luxe-gold);
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  opacity: 1;
+  outline: none;
+}
