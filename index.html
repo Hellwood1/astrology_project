@@ -7,7 +7,7 @@
     <script type="module" crossorigin src="/astrology_project/index.js"></script>
     <link rel="modulepreload" crossorigin href="/astrology_project/assets/vendor-gNlH_AHS.js">
     <link rel="stylesheet" crossorigin href="/astrology_project/assets/vendor-BUrcyj0q.css">
-    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-CpbQG4bz.css">
+    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-EnZa9EYq.css">
   </head>
   <body>
     <header class="header">
@@ -1239,21 +1239,77 @@
         loading="lazy"
       />
     </picture>
+    <!-- video blll -->
     <div class="retreat-video-container">
-      <video
-        class="retreat-video-wrapper"
-        src="/astrology_project/assets/first-retreat-video-BZFQp1yZ.mp4"
-        type="video/mp4"
-        aria-label="Відео медитативної сесії з жінками, що сидять в уютномуд деревяному будуничку серед свічок і карток, під час ретриту в Карпатах"
-        controls
-      ></video>
-      <video
-        class="retreat-video-wrapper"
-        src="/astrology_project/assets/second-retreat-video-CUszNTXX.mp4"
-        type="video/mp4"
-        aria-label="Відео сесії релаксації на ретриті: жінки лежать загорнуті в пледи у світлій залі з килимками, свічками та розслаблюючою атмосферою"
-        controls
-      ></video>
+      <div class="small-video-box">
+        <video
+          class="retreat-video-wrapper"
+          src="/astrology_project/assets/first-retreat-video-BZFQp1yZ.mp4"
+          type="video/mp4"
+          aria-label="Відео медитативної сесії з жінками, що сидять в уютномуд деревяному будуничку серед свічок і карток, під час ретриту в Карпатах"
+          controls
+        ></video>
+        <picture class="video-overlay" tabindex="0">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/astrology_project/assets/first-wrapper-desktop-x1-COgAyYh0.jpg 1x, /astrology_project/assets/first-wrapper-desktop-x2-DQJcAt1s.jpg 2x"
+          />
+          <source
+            srcset="/astrology_project/assets/first-wrapper-mobile-x1-DCToISqK.jpg 1x, /astrology_project/assets/first-wrapper-mobile-x2-CWNNvEgy.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/astrology_project/assets/first-wrapper-tablet-x1--_BBipEv.jpg 1x, /astrology_project/assets/first-wrapper-tablet-x2-CUuesWd0.jpg 2x"
+          />
+          <img src="./img/retreat/first-wrapper-desktop-1x.jpg" alt="Оверлей" />
+        </picture>
+        <button
+          class="video-play-btn"
+          aria-label="Відтворити відео"
+          tabindex="-1"
+        >
+          <svg class="play-icon">
+            <use href="/astrology_project/assets/sprite-DBXEfucc.svg#play-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="small-video-box">
+        <video
+          class="retreat-video-wrapper"
+          src="/astrology_project/assets/second-retreat-video-CUszNTXX.mp4"
+          type="video/mp4"
+          aria-label="Відео сесії релаксації на ретриті: жінки лежать загорнуті в пледи у світлій залі з килимками, свічками та розслаблюючою атмосферою"
+          controls
+        ></video>
+        <picture class="video-overlay" tabindex="0">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/astrology_project/assets/second-wrapper-desktop-x1-Cz2Ye5gw.jpg 1x, /astrology_project/assets/second-wrapper-desktop-x2-BXfX6Oja.jpg 2x"
+          />
+          <source
+            srcset="/astrology_project/assets/second-wrapper-mobile-x1-BoMany21.jpg 1x, /astrology_project/assets/second-wrapper-mobile-x2-cIdr3f02.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/astrology_project/assets/second-wrapper-tablet-x1-BAbhbdKl.jpg 1x, /astrology_project/assets/second-wrapper-tablet-x2-DuEPFL67.jpg 2x"
+          />
+          <img
+            src="./img/retreat/second-wrapper-desktop-1x.jpg"
+            alt="Оверлей"
+          />
+        </picture>
+        <button
+          class="video-play-btn"
+          aria-label="Відтворити відео"
+          tabindex="-1"
+        >
+          <svg class="play-icon">
+            <use href="/astrology_project/assets/sprite-DBXEfucc.svg#play-icon"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
