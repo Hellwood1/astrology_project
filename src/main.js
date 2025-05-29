@@ -7,4 +7,5 @@ import './js/taro-swiper.js'
 import './js/reiki-swiper'
 import './js/faq-accordion.js'
 import './js/up-btn.js'
+import './js/retreat-overlay.js'
 
