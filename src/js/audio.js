@@ -1,40 +1,45 @@
-// audio
 const audio = document.getElementById('bgMusic');
 const soundBtn = document.querySelector('.sound-btn');
 const soundText = soundBtn.querySelector('.sound-btn-text');
-const soundIcon = soundBtn.querySelector('.sound-svg use'); // обов'язково <use>, не svg
+const soundIcon = soundBtn.querySelector('.sound-svg use');
 
 function updateButtonState() {
   if (audio.paused) {
     soundText.textContent = 'Відтворити';
-    soundIcon.setAttribute('href', '../img/sprite.svg#play-icon');
+    soundIcon.setAttribute('href', './img/sprite.svg#play-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('href', '../img/sprite.svg#pause-icon');
+    soundIcon.setAttribute('href', './img/sprite.svg#pause-icon');
   }
 }
 
-function tryPlay() {
-  audio.play().then(() => {
-    updateButtonState();
-  }).catch((e) => {
-    console.warn('Audio play failed', e);
-  });
+function tryPlayOnce() {
+  if (audio.paused) {
+    audio.muted = false;
+    audio.play().then(() => {
+      updateButtonState();
+    }).catch(e => {
+      console.warn('Autoplay blocked:', e.message);
+    });
+  }
 
-  document.removeEventListener('click', tryPlay);
-  document.removeEventListener('scroll', tryPlay);
-  document.removeEventListener('keydown', tryPlay);
+  document.removeEventListener('click', tryPlayOnce);
+  document.removeEventListener('scroll', tryPlayOnce);
+  document.removeEventListener('keydown', tryPlayOnce);
 }
 
-document.addEventListener('click', tryPlay);
-document.addEventListener('scroll', tryPlay);
-document.addEventListener('keydown', tryPlay);
+document.addEventListener('click', tryPlayOnce, { once: true });
+document.addEventListener('scroll', tryPlayOnce, { once: true });
+document.addEventListener('keydown', tryPlayOnce, { once: true });
 
 soundBtn.addEventListener('click', () => {
+  audio.muted = false;
+
   if (audio.paused) {
-    audio.play();
+    audio.play().catch(e => console.warn('Manual play error:', e));
   } else {
     audio.pause();
   }
+
   updateButtonState();
 });
