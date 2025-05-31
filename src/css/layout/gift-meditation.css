@@ -30,6 +30,7 @@
 }
 
 .meditation-video {
+  border: none;
   width: 320px;
   height: 204px;
   border-radius: 26px;

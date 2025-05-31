@@ -81,12 +81,13 @@
         <video
           class="retreat-video-wrapper"
           src="./media/first-retreat-video.mp4"
-          type="video/mp4"
-          aria-label="Відео медитативної сесії з жінками, що сидять в уютномуд деревяному будуничку серед свічок і карток, під час ретриту в Карпатах"
+          aria-label="Відео медитативної сесії з жінками, що сидять у затишному дерев’яному будиночку серед свічок і карток, під час ретриту в Карпатах"
           controls
         ></video>
+
         <picture class="video-overlay" tabindex="0">
           <source
+            type="image/jpg"
             media="(min-width: 1440px)"
             srcset="
               ./img/retreat/first-wrapper-desktop-x1.jpg 1x,
@@ -98,7 +99,7 @@
               ./img/retreat/first-wrapper-mobile-x1.jpg 1x,
               ./img/retreat/first-wrapper-mobile-x2.jpg 2x
             "
-            media="(max-width:767px)"
+            media="(max-width: 767px)"
           />
           <source
             media="(min-width: 768px)"
@@ -107,8 +108,12 @@
               ./img/retreat/first-wrapper-tablet-x2.jpg 2x
             "
           />
-          <img src="./img/retreat/first-wrapper-desktop-1x.jpg" alt="Оверлей" />
+          <img
+            src="./img/retreat/first-wrapper-desktop-1x.jpg"
+            alt="Оверлей першого відео"
+          />
         </picture>
+
         <button
           class="video-play-btn"
           aria-label="Відтворити відео"
@@ -119,14 +124,15 @@
           </svg>
         </button>
       </div>
+
       <div class="small-video-box">
         <video
           class="retreat-video-wrapper"
           src="./media/second-retreat-video.mp4"
-          type="video/mp4"
           aria-label="Відео сесії релаксації на ретриті: жінки лежать загорнуті в пледи у світлій залі з килимками, свічками та розслаблюючою атмосферою"
           controls
         ></video>
+
         <picture class="video-overlay" tabindex="0">
           <source
             media="(min-width: 1440px)"
@@ -140,7 +146,7 @@
               ./img/retreat/second-wrapper-mobile-x1.jpg 1x,
               ./img/retreat/second-wrapper-mobile-x2.jpg 2x
             "
-            media="(max-width:767px)"
+            media="(max-width: 767px)"
           />
           <source
             media="(min-width: 768px)"
@@ -151,9 +157,10 @@
           />
           <img
             src="./img/retreat/second-wrapper-desktop-1x.jpg"
-            alt="Оверлей"
+            alt="Оверлей другого відео"
           />
         </picture>
+
         <button
           class="video-play-btn"
           aria-label="Відтворити відео"
