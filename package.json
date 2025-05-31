@@ -22,7 +22,7 @@
     "accordion-js": "^3.4.1",
     "focus-trap": "^7.6.4",
     "modern-normalize": "^3.0.1",
-    "swiper": "^11.2.6",
+    "swiper": "^11.2.8",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
