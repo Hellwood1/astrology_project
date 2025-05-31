@@ -11,7 +11,7 @@ const swiper = new Swiper('.vedic-swiper', {
   autoHeight: true,
 });
 
-document.querySelectorAll('.vedic-left-swiper-btn, .vedic-right-swiper-btn')
+document.querySelectorAll('.vedic-left-swiper-btn, .vedic-right-swiper-btn ')
   .forEach(btn => {
     btn.addEventListener('click', () => {
       btn.blur();
