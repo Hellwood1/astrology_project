@@ -9,7 +9,7 @@ function updateButtonState() {
     soundIcon.setAttribute('href', '/astrology_project/src/img/sprite.svg#pause-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('href', '/astrology_project/img/sprite.svg#pause-icon');
+    soundIcon.setAttribute('href', '/astrology_project/src/img/sprite.svg#pause-icon');
   }
 }
 
