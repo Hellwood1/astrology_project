@@ -6,10 +6,10 @@ const soundIcon = soundBtn.querySelector('.sound-svg use');
 function updateButtonState() {
   if (audio.paused) {
     soundText.textContent = 'Відтворити';
-    soundIcon.setAttribute('href', './img/sprite.svg#play-icon');
+    soundIcon.setAttribute('href', '../img/sprite.svg#play-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('xlink:href', './img/sprite.svg#pause-icon');
+    soundIcon.setAttribute('href', '../img/sprite.svg#pause-icon');
   }
 }
 
