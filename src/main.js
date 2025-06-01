@@ -6,4 +6,4 @@ import './js/reiki-swiper'
 import './js/faq-accordion.js'
 import './js/up-btn.js'
 import './js/retreat-overlay.js'
-
+import './js/lazy-loading.js'
