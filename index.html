@@ -27,54 +27,35 @@
       aria-label="Кнопка для відкриття та закриття мобільного меню"
     >
       <svg class="mobile-menu-svg" aria-label="menu">
-        <use
-          href="/astrology_project/assets/sprite-DBXEfucc.svg#mobile-menu-icon"
-          width="30"
-          height="30"
-        ></use>
+        <use href="#mobile-menu-icon" width="30" height="30"></use>
       </svg>
     </button>
+
     <nav class="nav">
       <ul class="nav-menu">
-        <li>
-          <a href="#vedic-astrology-id">Астрологія</a>
-        </li>
-        <li>
-          <a href="#matrix-id">Матриця долі</a>
-        </li>
-        <li>
-          <a href="#regres-id">Регресія</a>
-        </li>
-        <li>
-          <a href="#retreat-id">Ретрити</a>
-        </li>
-        <li>
-          <a href="#taro-id">Таро</a>
-        </li>
-        <li>
-          <a href="#reiki-id">Рейкі</a>
-        </li>
-        <li>
-          <a href="#energy-protection-id">Енергетичне</a>
-        </li>
-        <li>
-          <a href="#hypno-id">Гіпнотерапія</a>
-        </li>
-        <li>
-          <a href="#lila-id">Ліла</a>
-        </li>
+        <li><a href="#vedic-astrology-id">Астрологія</a></li>
+        <li><a href="#matrix-id">Матриця долі</a></li>
+        <li><a href="#regres-id">Регресія</a></li>
+        <li><a href="#retreat-id">Ретрити</a></li>
+        <li><a href="#taro-id">Таро</a></li>
+        <li><a href="#reiki-id">Рейкі</a></li>
+        <li><a href="#energy-protection-id">Енергетичне</a></li>
+        <li><a href="#hypno-id">Гіпнотерапія</a></li>
+        <li><a href="#lila-id">Ліла</a></li>
       </ul>
     </nav>
+
     <button
       class="sound-btn"
       type="button"
       aria-label="Кнопка для відтворення аудіо файлу."
     >
       <span class="sound-btn-text">Відтворити</span>
-      <svg class="sound-svg" aria-label="menu">
-        <use href="/astrology_project/assets/sprite-DBXEfucc.svg#play-icon" width="30" height="30"></use>
+      <svg class="sound-svg" width="30" height="30">
+        <use href="#play-icon"></use>
       </svg>
     </button>
+
     <audio id="bgMusic" src="/astrology_project/assets/audio-BpvUwS_p.mp3" loop></audio>
   </div>
 </header>
@@ -3200,5 +3181,23 @@
   </svg>
 </button>
 
+
+    <svg style="display: none">
+      <symbol id="play-icon" viewBox="0 0 32 32">
+        <path
+          d="M16 0A16 16 0 0 0 4.687 27.313a16.013 16.013 0 0 0 8.192 4.379A16.004 16.004 0 0 0 32 16 16.002 16.002 0 0 0 16 0zm-3.2 23.2V8.8l9.6 7.2-9.6 7.2z"
+        ></path>
+      </symbol>
+      <symbol id="pause-icon" viewBox="0 0 32 32">
+        <path
+          d="M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16S24.837 0 16 0zm-1.6 22.4h-3.2V9.6h3.2v12.8zm6.4 0h-3.2V9.6h3.2v12.8z"
+        ></path>
+      </symbol>
+      <symbol id="mobile-menu-icon" viewBox="0 0 32 32">
+        <path
+          d="M2.067 13.467A1.266 1.266 0 0 1 .8 12.2V2.069A1.266 1.266 0 0 1 2.067.802H12.2a1.266 1.266 0 0 1 1.267 1.267V12.2a1.266 1.266 0 0 1-1.267 1.267H2.067zm17.733 0a1.266 1.266 0 0 1-1.267-1.267V2.069A1.266 1.266 0 0 1 19.8.802h10.131a1.266 1.266 0 0 1 1.267 1.267V12.2a1.266 1.266 0 0 1-1.267 1.267H19.8zM2.067 31.2A1.266 1.266 0 0 1 .8 29.933V19.8a1.266 1.266 0 0 1 1.267-1.267H12.2a1.266 1.266 0 0 1 1.267 1.267v10.133A1.266 1.266 0 0 1 12.2 31.2H2.067zm17.733 0a1.266 1.266 0 0 1-1.267-1.267V19.8a1.266 1.266 0 0 1 1.267-1.267h10.131a1.266 1.266 0 0 1 1.267 1.267v10.133a1.266 1.266 0 0 1-1.267 1.267H19.8z"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>
