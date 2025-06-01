@@ -6,10 +6,10 @@ const soundIcon = soundBtn.querySelector('.sound-svg use');
 function updateButtonState() {
   if (audio.paused) {
     soundText.textContent = 'Відтворити';
-    soundIcon.setAttribute('href', '../img/sprite.svg#play-icon');
+    soundIcon.setAttribute('href', '/astrology_project/src/img/sprite.svg#pause-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('href', '../img/sprite.svg#pause-icon');
+    soundIcon.setAttribute('href', '/astrology_project/img/sprite.svg#pause-icon');
   }
 }
 
