@@ -6,19 +6,17 @@ const soundIcon = soundBtn.querySelector('.sound-svg use');
 function updateButtonState() {
   if (audio.paused) {
     soundText.textContent = 'Відтворити';
-    soundIcon.setAttribute('href', './img/sprite.svg#play-icon');
+    soundIcon.setAttribute('href', '#play-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('href', './img/sprite.svg#pause-icon');
+    soundIcon.setAttribute('href', '#pause-icon');
   }
 }
 
 function tryPlayOnce() {
   if (audio.paused) {
     audio.muted = false;
-    audio.play().then(() => {
-      updateButtonState();
-    }).catch(e => {
+    audio.play().then(updateButtonState).catch(e => {
       console.warn('Autoplay blocked:', e.message);
     });
   }
@@ -34,12 +32,10 @@ document.addEventListener('keydown', tryPlayOnce, { once: true });
 
 soundBtn.addEventListener('click', () => {
   audio.muted = false;
-
   if (audio.paused) {
     audio.play().catch(e => console.warn('Manual play error:', e));
   } else {
     audio.pause();
   }
-
   updateButtonState();
 });
