@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       http-equiv="Content-Security-Policy"
-      content="font-src 'self' data:; default-src 'self'; script-src 'self' https://www.youtube.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com; object-src 'none';"
+      content="
+      default-src 'self';
+    font-src 'self' data:;
+    script-src 'self' https://www.youtube.com https://www.gstatic.com;
+    style-src 'self' 'unsafe-inline';
+    frame-src https://www.youtube.com;
+    img-src 'self' https://img.youtube.com;
+    object-src 'none';"
     />
+
     <meta
       name="description"
       content="Духовний провідник Зведа Рибка: консультації з астрології, матриці долі, регресій, гіпнотерапії, Таро, Рейкі, енергетичних практик, ретритів та гри Ліла. Я допоможу тобі знайти гармонію, відповіді та внутрішню силу."
@@ -20,7 +29,7 @@
     <script type="module" crossorigin src="/astrology_project/index.js"></script>
     <link rel="modulepreload" crossorigin href="/astrology_project/assets/vendor-CnqwJdtJ.js">
     <link rel="stylesheet" crossorigin href="/astrology_project/assets/vendor-BUrcyj0q.css">
-    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-Bx3KlhnU.css">
+    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-5gnCgpay.css">
   </head>
   <body>
     <header class="header">
@@ -2761,15 +2770,25 @@
       свободи. Відчуй свою силу в м’якості, нагадай собі, що ти – джерело, яке
       притягує достаток, задоволення й життя в гармонії.
     </p>
+
     <div class="meditation-video-wrapper">
-      <iframe
-        class="meditation-video"
-        src="https://www.youtube.com/embed/qqWL-hXJBIA?si=73uXn9M8Mho-5MGW&modestbranding=1"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <div
+        class="meditation-video-facade meditation-video"
+        data-video-id="qqWL-hXJBIA"
+        role="button"
+        aria-label="Play video"
+      >
+        <button class="play-icon" aria-label="Play video">
+          <svg
+            class="gift-meditation-icon"
+            width="64"
+            height="64"
+            aria-hidden="true"
+          >
+            <use href="/astrology_project/assets/sprite-DBXEfucc.svg#play-icon" />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -3086,31 +3105,31 @@
     </ul>
     <ul class="footer-links">
       <li>
-        <a
-          href="https://t.me/nara_web"
-          class="social-link"
-          aria-label="Telegram"
-          target="_blank"
-        >
-          Designed by nara_web
-        </a>
+        <p>
+          Designed by
+          <a
+            href="https://t.me/nara_web"
+            class="social-link"
+            aria-label="Telegram link"
+            target="_blank"
+          >
+            nara_web
+          </a>
+        </p>
       </li>
       <li>
-        <a
-          href="https://t.me/dmytry_samburenko"
-          class="social-link"
-          aria-label="Instagram"
-          target="_blank"
-        >
-          Created by SkyLand Web Studio
-        </a>
+        <p>
+          Created by<a
+            href="https://t.me/dmytry_samburenko"
+            class="social-link"
+            aria-label="Telegram link"
+            target="_blank"
+          >
+            SkyLand Web Studio
+          </a>
+        </p>
       </li>
     </ul>
-    <!-- <button class="scroll-to-top" aria-label="Up">
-      <svg class="up-svg" width="52" height="52">
-        <use href="./img/sprite.svg#icon-up"></use>
-      </svg>
-    </button> -->
   </div>
 </footer>
 
