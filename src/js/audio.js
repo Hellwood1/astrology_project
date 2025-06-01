@@ -9,7 +9,7 @@ function updateButtonState() {
     soundIcon.setAttribute('href', './img/sprite.svg#play-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('href', './img/sprite.svg#pause-icon');
+    soundIcon.setAttribute('xlink:href', './img/sprite.svg#pause-icon');
   }
 }
 
