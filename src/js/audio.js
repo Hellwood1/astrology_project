@@ -4,16 +4,12 @@ const soundText = soundBtn.querySelector('.sound-btn-text');
 const soundIcon = soundBtn.querySelector('.sound-svg use');
 
 function updateButtonState() {
-  const path = window.location.pathname.startsWith('/astrology_project/')
-    ? '/astrology_project/src/img/sprite.svg'
-    : './img/sprite.svg';
-
   if (audio.paused) {
     soundText.textContent = 'Відтворити';
-    soundIcon.setAttribute('href', `${path}#play-icon`);
+    soundIcon.setAttribute('href', './img/sprite.svg#play-icon');
   } else {
     soundText.textContent = 'Зупинити';
-    soundIcon.setAttribute('href', `${path}#pause-icon`);
+    soundIcon.setAttribute('href', './img/sprite.svg#pause-icon');
   }
 }
 
