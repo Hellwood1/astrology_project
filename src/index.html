@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      http-equiv="Content-Security-Policy"
+      content="font-src 'self' data:; default-src 'self'; script-src 'self' https://www.youtube.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com; object-src 'none';"
+    />
+    <meta
       name="description"
       content="Духовний провідник Зведа Рибка: консультації з астрології, матриці долі, регресій, гіпнотерапії, Таро, Рейкі, енергетичних практик, ретритів та гри Ліла. Я допоможу тобі знайти гармонію, відповіді та внутрішню силу."
     />
@@ -37,6 +41,8 @@
     <load src="./partials/mobile-menu.html" />
     <load src="./partials/up-btn.html" />
     <script type="module" src="./main.js" defer></script>
+
+    <!-- SVG для відображення кнопки 'Play/Pause' за допомогою JS -->
 
     <svg style="display: none">
       <symbol id="play-icon" viewBox="0 0 32 32">
