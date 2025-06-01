@@ -30,9 +30,8 @@
 }
 
 .meditation-video {
-  border: none;
   width: 320px;
-  height: 204px;
+  height: 180px;
   border-radius: 26px;
 }
 
@@ -73,6 +72,8 @@
 
 .gift-meditation-icon {
   fill: white;
+  width: 46px;
+  height: 46px;
 }
 
 .play-icon:hover .gift-meditation-icon,
@@ -143,5 +144,10 @@
   .meditation-video-facade {
     width: 1360px;
     height: 760px;
+  }
+
+  .gift-meditation-icon {
+    width: 60px;
+    height: 60px;
   }
 }

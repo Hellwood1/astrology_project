@@ -4,7 +4,7 @@ import 'swiper/css/bundle';
 let swiper;
 const initSwiper = () => {
   swiper = new Swiper('.reiki-swiper-init', {
-    loop: false,
+    loop: true,
     allowTouchMove: true,
     autoHeight: true,
     slidesPerView: 'auto',

@@ -1,5 +1,4 @@
-
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const facade = document.querySelector(".meditation-video-facade");
     if (!facade) return;
 
