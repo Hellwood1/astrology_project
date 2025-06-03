@@ -45,6 +45,17 @@
   cursor: pointer;
   overflow: hidden;
   border-radius: 26px;
+  filter: grayscale(100%);
+}
+
+.meditation-video-facade:hover,
+.meditation-video-facade:focus {
+  filter: grayscale(0);
+  outline: none;
+}
+.meditation-video-facade:has(:focus) {
+  filter: grayscale(0);
+  outline: none;
 }
 
 .meditation-video-facade::before {
