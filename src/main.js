@@ -1,7 +1,7 @@
 import './js/modal.js';
 import './js/audio.js'
 import './js/swiper.js'
-
+import './js/gift-over.js'
 import './js/reiki-swiper'
 import './js/faq-accordion.js'
 import './js/up-btn.js'
