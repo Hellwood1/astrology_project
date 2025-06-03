@@ -7,23 +7,19 @@
   padding-right: 0;
 }
 .reiki-main-title {
-  color: var(--jet-black);
   text-align: center;
   font-family: Forum;
   font-size: 44px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.18; /* 118.182% */
+  line-height: 1.18;
   text-transform: uppercase;
   margin-bottom: 36px;
   padding-right: 20px;
 }
 .reiki-content {
-  color: var(--jet-black);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.56; /* 156.25% */
+  line-height: 1.56;
   margin-bottom: 32px;
   padding-right: 20px;
 }
@@ -58,7 +54,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.56; /* 156.25% */
+  line-height: 1.56;
   display: flex;
   padding: 14px 16px;
   justify-content: center;
@@ -80,11 +76,9 @@
   list-style-type: disc;
   list-style-position: outside;
   padding-left: 19px;
-  color: var(--jet-black);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.56; /* 156.25% */
+  line-height: 1.56;
   margin-bottom: 32px;
 }
 .reiki-answers li::marker {
@@ -170,9 +164,8 @@
   text-align: center;
   font-family: 'Open Sans';
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.56; /* 156.25% */
+  line-height: 1.56;
   display: flex;
   padding: 12px 14px;
   align-items: center;

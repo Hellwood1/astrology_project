@@ -29,42 +29,47 @@
   color: var(--luxe-gold);
 }
 
+/* Відео контейнер */
 .meditation-video {
-  width: 320px;
-  height: 180px;
+  width: 100%;
+  max-width: 1360px;
+  aspect-ratio: 16 / 9;
   border-radius: 26px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-/* ФАСАД YouTube до кліку */
-
+/* Фасад */
 .meditation-video-facade {
+  width: 100%;
+  height: 100%;
   position: relative;
-  background-color: #9b9b9b;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
   overflow: hidden;
   border-radius: 26px;
-  filter: grayscale(100%);
+  cursor: pointer;
 }
 
-.meditation-video-facade:hover,
-.meditation-video-facade:focus {
-  filter: grayscale(0);
-  outline: none;
-}
-.meditation-video-facade:has(:focus) {
-  filter: grayscale(0);
-  outline: none;
-}
-
-.meditation-video-facade::before {
-  content: '';
+/* Шпалери */
+.meditation-custom-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   display: block;
-  padding-top: 56.25%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  z-index: 1;
 }
 
-/* Кнопка Play */
+.meditation-video-facade:hover .meditation-custom-bg,
+.meditation-video-facade:focus .meditation-custom-bg {
+  filter: grayscale(0%);
+}
+
+/* Кнопка Play*/
 .play-icon {
   position: absolute;
   top: 50%;
@@ -72,19 +77,19 @@
   width: 60px;
   height: 60px;
   transform: translate(-50%, -50%);
-  background-color: transparent;
+  background: none;
   border: none;
   outline: none;
   cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: auto;
+  z-index: 2;
+  padding: 0;
 }
 
 .gift-meditation-icon {
   fill: white;
   width: 46px;
   height: 46px;
+  transition: fill 0.3s ease;
 }
 
 .play-icon:hover .gift-meditation-icon,
@@ -93,8 +98,7 @@
 }
 
 /* TABLET */
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .meditation-section {
     padding: 100px 0 60px 0;
   }
@@ -114,20 +118,15 @@
     margin-bottom: 44px;
   }
 
-  .meditation-video {
-    width: 690px;
-    height: 380px;
-  }
-
-  .meditation-video-facade {
-    width: 690px;
-    height: 388px;
+  .gift-meditation-icon {
+    width: 50px;
+    height: 50px;
   }
 }
 
-/* DESKTOP */
+/* DESCTOP */
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .meditation-section {
     padding: 140px 0 70px 0;
   }
@@ -145,16 +144,6 @@
     font-size: 18px;
     line-height: 1.55;
     margin: 0 auto 44px auto;
-  }
-
-  .meditation-video {
-    width: 1360px;
-    height: 765px;
-  }
-
-  .meditation-video-facade {
-    width: 1360px;
-    height: 760px;
   }
 
   .gift-meditation-icon {
