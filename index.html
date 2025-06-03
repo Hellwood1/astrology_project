@@ -14,12 +14,13 @@
       http-equiv="Content-Security-Policy"
       content="
       default-src 'self';
-    font-src 'self' data:;
-    script-src 'self' https://www.youtube.com https://www.gstatic.com;
-    style-src 'self' 'unsafe-inline';
-    frame-src https://www.youtube.com;
-    img-src 'self' https://img.youtube.com;
-    object-src 'none';"
+      font-src 'self' data:;
+      script-src 'self' https://www.youtube.com https://www.gstatic.com;
+      style-src 'self' 'unsafe-inline';
+      frame-src https://www.youtube.com;
+      img-src 'self' https://img.youtube.com https://i.ytimg.com;
+      object-src 'none';
+    "
     />
 
     <meta
@@ -35,7 +36,7 @@
     <script type="module" crossorigin src="/astrology_project/index.js"></script>
     <link rel="modulepreload" crossorigin href="/astrology_project/assets/vendor-CnqwJdtJ.js">
     <link rel="stylesheet" crossorigin href="/astrology_project/assets/vendor-BUrcyj0q.css">
-    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-Ezth0Usd.css">
+    <link rel="stylesheet" crossorigin href="/astrology_project/assets/index-YaOadc3K.css">
   </head>
   <body>
     <header class="header">
@@ -2777,13 +2778,36 @@
       притягує достаток, задоволення й життя в гармонії.
     </p>
 
-    <div class="meditation-video-wrapper">
-      <div
-        class="meditation-video-facade meditation-video"
-        data-video-id="qqWL-hXJBIA"
-        role="button"
-        aria-label="Play video"
-      >
+    <div class="meditation-video">
+      <div class="meditation-video-facade" data-video-id="qqWL-hXJBIA">
+        <picture>
+          <source
+            srcset="../img/gift-meditation/gift-med-wrapper-desctop@2x.jpg"
+            media="(min-width: 1440px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="../img/gift-meditation/gift-med-wrapper-desctop@1x.jpg"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="../img/gift-meditation/gift-med-wrapper-tablet@2x.jpg"
+            media="(min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="../img/gift-meditation/gift-med-wrapper-tablet@1x.jpg"
+            media="(min-width: 768px) and (max-width: 1439px)"
+          />
+          <source
+            srcset="../img/gift-meditation/gift-med-wrapper-mobile@2x.jpg"
+            media="(max-width: 767px) and (min-resolution: 2dppx)"
+          />
+          <img
+            class="meditation-custom-bg"
+            src="../img/gift-meditation/gift-med-wrapper-desctop@1x.jpg"
+            alt="Постер медитації"
+          />
+        </picture>
+
         <button class="play-icon" aria-label="Play video">
           <svg class="gift-meditation-icon" aria-hidden="true">
             <use href="/astrology_project/assets/sprite-DBXEfucc.svg#play-icon" />
