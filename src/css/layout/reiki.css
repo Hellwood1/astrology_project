@@ -90,8 +90,8 @@
   flex-shrink: 0;
   aspect-ratio: 321.12/309;
   border-radius: 400px;
-  background: url(/src/img/reiki/reiki-desk-1x.jpg) lightgray 50% / cover
-    no-repeat;
+  /* background: url(./src/img/reiki/reiki-desk-1x.jpg) lightgray 50% / cover
+    no-repeat; */
 }
 .reiki-pic {
   display: block;
