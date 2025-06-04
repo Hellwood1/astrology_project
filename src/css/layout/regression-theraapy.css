@@ -162,8 +162,8 @@
   flex-shrink: 0;
   aspect-ratio: 319.04/307;
   border-radius: 400px;
-  background: url(/src/img/regres/regres-desk-1x.jpg) lightgray 50% / cover
-    no-repeat;
+  /* background: url(/src/img/regres/regres-pic-desktop@1x.jpg) lightgray 50% /
+    cover no-repeat; */
 }
 .regres-pic {
   display: block;

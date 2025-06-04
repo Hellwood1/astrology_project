@@ -171,8 +171,8 @@
   flex-shrink: 0;
   aspect-ratio: 319.04/307;
   border-radius: 400px;
-  background: url(/src/img/hypno/hypno-circle-desk-1x.jpg) lightgray 50% / cover
-    no-repeat;
+  /* background: url(/src/img/hypno/hypno-circle-desk.gif) lightgray 50% / cover
+    no-repeat; */
 }
 .hypno-pic {
   display: block;
