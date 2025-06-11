@@ -1,5 +1,5 @@
 .about-guide-section {
-  padding: 78px 0px 42px 0px;
+  padding: 78px 0px 112px 0px;
 }
 
 .section-title {
@@ -78,12 +78,12 @@
 .about-guide-first-img,
 .about-guide-second-img {
   border-radius: 24px;
-  width: 214px;
-  height: 270px;
+  width: 238px;
+  height: 276px;
 }
 
 .caption-container {
-  width: 224px;
+  width: 248px;
   padding: 8px 10px;
 
   border-radius: 12px;
@@ -95,7 +95,7 @@
 .first-img-container {
   margin-right: auto;
   max-height: 322px;
-  margin-bottom: 24px;
+  margin-bottom: 104px;
 }
 .second-img-container {
   margin: auto;
@@ -112,6 +112,10 @@
   line-height: 1.5;
 }
 
+.photo-caprion-bold {
+  font-weight: 700;
+}
+
 .first-photo-caption {
   position: relative;
   top: -60px;
@@ -120,15 +124,15 @@
 
 .second-photo-caption {
   position: relative;
-  top: -56px;
-  left: 96px;
+  top: -38px;
+  left: 68px;
 }
 
 /* TABLET*/
 
 @media screen and (min-width: 768px) {
   .about-guide-section {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 60px 0;
   }
 
   .section-title {
@@ -182,8 +186,10 @@
 
   .first-photo-caption,
   .second-photo-caption {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.75;
   }
+
   /* Поиціонування зображень */
 
   .first-img-container {
@@ -200,12 +206,12 @@
   /* Позиціонування підписів до світлин*/
 
   .first-photo-caption {
-    top: -118px;
+    top: -164px;
     left: -39px;
   }
 
   .second-photo-caption {
-    top: -114px;
+    top: -136px;
     left: 256px;
   }
 }
@@ -263,14 +269,20 @@
     border-radius: 24px;
   }
 
+  .first-photo-caption,
+  .second-photo-caption {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
   /* Позиціонування підписів до світлин*/
   .first-photo-caption {
-    top: -118px;
+    top: -190px;
     left: -234px;
   }
 
   .second-photo-caption {
-    top: -118px;
+    top: -190px;
     left: 234px;
   }
 }
