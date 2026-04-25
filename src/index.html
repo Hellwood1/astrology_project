@@ -10,19 +10,23 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
-      default-src 'self';
-      font-src 'self' data:;
-      script-src 'self' https://www.youtube.com https://www.gstatic.com;
-      style-src 'self' 'unsafe-inline';
-      frame-src https://www.youtube.com;
-      img-src 'self' https://img.youtube.com https://i.ytimg.com;
-      object-src 'none';
-    "
-    />
-
+<meta
+  http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self';
+    font-src 'self' data:;
+    script-src 'self' 'unsafe-inline' https://www.youtube.com https://www.gstatic.com;
+    style-src 'self' 'unsafe-inline';
+    frame-src https://www.youtube.com https://www.youtube-nocookie.com;
+    img-src 'self' data: https://img.youtube.com https://i.ytimg.com;
+    connect-src 'self' https://www.youtube.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  "
+/>
+    <meta property="og:url" content="https://zviedataroastro.com/" />
+    <meta property="og:type" content="website" />
     <meta
       name="description"
       content="Духовний провідник Зведа Рибка: консультації з астрології, матриці долі, регресій, гіпнотерапії, Таро, Рейкі, енергетичних практик, ретритів та гри Ліла. Я допоможу тобі знайти гармонію, відповіді та внутрішню силу."
@@ -31,8 +35,29 @@
       name="keywords"
       content="Астрологія, матриця долі, регресія, ретрит, Таро, Рейкі, гіпнотерапія, енергетичні практики, духовний розвиток, гра Ліла, консультація астролога, сеанс регресії, медитація, енергія, самопізнання."
     />
+    <meta
+  property="og:title"
+  content="Зведа Рибка — астрологія, регресії, Рейкі та духовні практики"
+/>
+<meta
+  property="og:description"
+  content="Консультації з астрології, матриці долі, регресій, гіпнотерапії, Таро, Рейкі, ретритів та гри Ліла."
+/>
     <meta name="author" content="Зведа Рибка" />
-    <title>Зведа Рибка</title>
+    <link rel="canonical" href="https://zviedataroastro.com/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Зведа Рибка",
+        "url": "https://zviedataroastro.com/",
+        "sameAs": [
+          "https://t.me/zviedarubka",
+          "https://www.instagram.com/zvieda_astro_taro/?igsh=MWVleThpYzB1ZWR1OQ%3D%3D#"
+        ]
+      }
+    </script>
+    <title>Зведа Рибка — астрологія, регресії, Рейкі та духовні практики</title>
   </head>
   <body>
     <load src="./partials/header.html" />
